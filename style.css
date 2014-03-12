@@ -239,6 +239,14 @@ figcaption {
 	padding: 5px;
 }
 
+/*
+.imgfloat {
+	width: 25% !important;
+	height:auto;
+	margin: 10px;
+	float:left;
+} */
+
 /*_________________________________________________________*/
 /*                                                         */
 /*  Section Colors                                         */
@@ -436,6 +444,10 @@ section#portfolio img {
 
 section.page {
 	padding-top:100px;
+} section.page img {
+	width: 100%;
+	height: auto;
+	padding-bottom: 20px;
 }
 
 div.two-col {
@@ -454,6 +466,7 @@ div.col-layout {
 	text-align: center
 } div.col-layout img {
 	width: 100%;
+	padding: 0px;
 	display: inline;
 	margin:10px;
 	height:auto;
