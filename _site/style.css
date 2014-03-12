@@ -25,10 +25,6 @@
 	color: #333332;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
 	color: #333332;
 	font-size: 30px;
@@ -60,12 +56,9 @@ p {
 }
 
 h1 {
+	font-size: 35px;
+	line-height: 60px;
 	display:inline;
-	text-align: center;
-	font-size: 30px;
-	padding-bottom: 3px;
-	border-bottom: 2px solid #333332;
-	margin-bottom: 50px;
 }
 
 h2 {
@@ -74,11 +67,6 @@ h2 {
 	padding-bottom: 3px;
 	border-bottom: 2px solid #333332;
 	margin-bottom: 50px;
-}
-
-h3 {
-	font-size:20px;
-	padding-top: 30px;
 }
 
 ul {
@@ -96,7 +84,7 @@ ul {
 	border:0;
 } ul a:hover {
 	padding-bottom: 2px;
-	border-bottom: 2px solid #333332;
+	border-bottom: 2px solid #1a1a1a;
 }
 
 ul.big {
@@ -122,29 +110,11 @@ strong {
 	font-weight:bold;
 }
 
-img {
-	border-radius: 2px;
-}
-
 /*_________________________________________________________*/
 /*                                                         */
 /*  Layout                                                 */
 /*  ======                                                 */
 /*_________________________________________________________*/
-
-div.wrapper { /* for sticky footer */
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -200px; 
-}
-div.wrapper:after {
-  content: "";
-  display: block;
-}
-footer, div.wrapper:after {
-  /* .push must be the same height as footer */
-  height: 200px; 
-}
 
 .col1 {
 	width: 500px;
@@ -157,11 +127,6 @@ footer, div.wrapper:after {
 	width: 70%;
 	margin-left:auto;
 	margin-right:auto;
-	padding-bottom: 20px;
-} .col2 img {
-	width: 100%;
-	height:auto;
-	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
@@ -186,16 +151,6 @@ section {
 	padding-bottom: 50px;
 }
 
-div.page-title {
-	padding-top: 30px;
-	text-align: center;
-	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
-} div.page-title figcaption {
-	padding-top: 50px;
-}
-	
 span {
 	display:block;
 	font-size: 16px;
@@ -209,10 +164,6 @@ span {
 
 p span {
 	display:inline;
-}
-
-figcaption {
-	font-size: 12px;
 }
 
 /*_________________________________________________________*/
@@ -244,37 +195,6 @@ figcaption {
 /*  ===============                                        */
 /*_________________________________________________________*/
 
-/* ----------------------------- */
-/* Footer */
-
-footer {
-	padding: 20px;
-	background-color: linen;
-} footer div{
-	float:right;
-	margin: 10px;
-} footer div#top {
-	width:10%;
-} footer div#nav {
-	width: 50%;
-} footer div#contact {
-	width: 25%;
-} footer ul {
-	font-size: 15px;
-} footer li {
-	line-height: 30px;
-} footer p a {
-	font-size: 20px;
-	letter-spacing: 2px;
-	margin-top: -30px;
-	border-bottom: 0px solid;
-	line-height: 0px;
-} footer p a:hover {
-	padding-bottom:2px;
-	border-bottom: 2px solid #333335;
-}
-
-
 
 /* ----------------------------- */
 /* Hello */
@@ -284,7 +204,7 @@ footer {
 	line-height: 70px;
 	border-bottom: 8px solid #0e0e0e;
 	cursor:pointer;
-	margin-top:20%;
+	margin-top:30px;
 	margin-bottom: 30px;
 } #hello p {
 	width:500px;
@@ -295,11 +215,6 @@ footer {
 	width:100%;
 	height:auto;
 	border-radius: ;
-} #hello h1 {
-	font-size: 35px;
-	line-height: 60px;
-	display:inline;
-	border-bottom: 0;
 }
 
 
@@ -317,7 +232,7 @@ nav {
 } nav p {
 	width: 30px;
 	font-size: 10px;
-	border-bottom: 3px solid #333332;
+	border-bottom: 3px solid #1a1a1a;
 	line-height: 8px;
 	padding:0;
 }
@@ -364,7 +279,12 @@ article#about {
 /* Portfolio */
 
 section#portfolio {
-	padding-top: 20%;
+	background-color: seashell;
+	text-align: center;
+	padding-bottom: 300px;
+}
+
+section#portfolio-page {
 	background-color: seashell;
 	text-align: center;
 	padding-bottom: 300px;
@@ -398,13 +318,9 @@ section#portfolio img {
 /*  ==============                                         */
 /*_________________________________________________________*/
 
-section.pofo-page {
-	padding-top:100px;
-}
-
-div.pofo-column {
-	max-width: 46%;
-	margin:10px;
+div.pofo-page {
+	max-width: 43%;
+	margin:15px;
 	height:auto;
 	display:block;
 	float:left;
@@ -415,19 +331,18 @@ div.pofo-column {
 	opacity: 1;
 } how to get name of project to show on hover? */
 
-div.pofo-column img {
+section#portfolio-page img {
 	display: inline;
 	margin:10px;
 	max-width: 100%;
 	height:auto;
 	clear:both;
 	-webkit-transition: opacity 1s, box-shadow 1s;
-} div.pofo-column img:hover {
+} section#portfolio-page img:hover {
 	opacity:.8;
 	box-shadow: 0px 0px 3px #333;
 	cursor:pointer;
-} 
-
+}
 
 
 

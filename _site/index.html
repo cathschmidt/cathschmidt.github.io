@@ -2,80 +2,8 @@
 <head>
 	<link rel="stylesheet" href="style.css">
 	<title>C.L.S.</title>
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script>
-
-		// TO DO
-		// 1. navigation - fade in, fade out, 
-		// 2. clean up page, css
-
-		$(document).ready(function(){	
-			// $("nav").hide();
-			$("#about").hide();
-			$("#see-less1").hide();
-
-			$("#about-read").click(function() {
-				$("#about-read").hide();
-				$("#about").fadeIn(1000);
-				$("#see-less1").show();
-			});
-
-			$("#see-less2, #see-less1").click(function() {
-				$("#see-less1").hide();
-				$("#about").toggle(1000);
-				$("#about-read").show();
-			});
-
-			$("#see-less2").click(function() {
-				var newone = $("#one").offset().top;
-				var newone = newone + 100;
-				$('html, body').animate({
-      				scrollTop: newone
-    				}, 800);
-			});
-
-			//footer top scrolling
-			$("#top").click(function() {
-    				$('html, body').animate({
-      				scrollTop: $("#hello").offset().top
-    				}, 800);
-			}); 
-
-
-
-		/*	$(document).scroll(function() {
-				  	var scrollTop = $(document).scrollTop();
-			  		var identity = $("#one").offset().top;
-
-				  	if (scrollTop > (identity)) {
-				  		$("nav").fadeIn("slow");
-				  	} else {
-				  		$("nav").fadeOut("slow");
-				  	}
-				});
-
-			$("#bars").onclick(function() {
-				$("#navstuff").append
-			}); */
-
-		});
-	</script>
 </head>
 <body>
-<div class="wrapper">
-
-<!--	<nav id="bars" style="display:none">
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-	</nav>
-
-	<nav id="words">
-		<a href="#">about me</a>
-		<a href="#">current projects</a>
-		<a href="#">themes</a>
-		<a href="#">friends</a>
-	</nav> -->
 
 	<div id="left" class="rotate">
 
@@ -84,147 +12,16 @@
 	</div>
 	<div id="right" class="rotate">
 
-		last updated winter 2014
+		last updated march 2014
 
 	</div>
 
 	<!-- ///////////////////////////////////////// 
 	//// Hello /////////////////////////////////// -->
 	<div class="col1" id="hello">
-		<!-- <p><img src="meme2.jpg" style="width:500px; height:auto; margin-left:auto; margin-right:auto;"></p> -->
-		<h1>catherine leigh schmidt<br> is a graphic design student at the rhode island school of design graduating in 2014.</h1>
+		<p><img src="meme2.jpg" style="width:500px; height:auto; margin-left:auto; margin-right:auto; border-radius: 10px;"></p>
+		<h1><strong>catherine leigh schmidt<br> is a graphic design student at the rhode island school of design graduating in 2014.</strong></h1>
 	</div>
-
-
-	<section id="portfolio">
-		<div class="col1">
-			<h2>portfolio</h2>
-		</div>
-		<div class="col4" style="clear:both">
-			<div class="pofo">
-				<img src="pofo/blue-steam-catalogue1.jpg">
-				<img src="pofo/green-dp.jpg">
-			</div>
-			<div class="pofo">
-				<img src="pofo/red-acp1.jpg" class="vert">
-			</div>
-			<div class="pofo">
-				<img src="pofo/yellow-color1.jpg">
-				<img src="pofo/blue-ode1.jpg">
-			</div>
-			<div class="pofo">
-				<img src="pofo/blue-steam-hc.jpg">
-			</div>
-		</div>
-		<div class="col1">
-		<span><a href="pofo.html">see more &#10137;</a>
-		</div>
-	</section>
-
-	<section id="two">
-		<div class="col1">
-			<h2>current projects</h2>
-			<ol>
-				<li>RISD STEAM</li> <span>more info about this project in brief</span>
-				<li>Type/India</li>
-				<li>div compositions</li>
-				<li>baby browser</li>
-				<li>prints</li>
-			</ol>
-			<span><a href="#">see more &#9755;</a></span>
-		</div>
-	</section>
-
-	<section id="one">
-		<div class="col1">
-			<h2 style="clear:both;">about me</h2>
-			<span>tl;dr: I like typography, scripts, &amp; tech.</span>
-		</div>
-		<div class="col2">
-			<ul class="big">
-				<li>&#9993;</li>
-				<li>&#9996;</li>
-				<li>&#9872;</li>
-				<li>&#9752;</li>
-				<li>&#63490;</li>
-			</ul>
-			<ul>
-				<li><a href="mailto:cschmidt@risd.edu" target="_blank">email</a></li>
-				<li><a href="portfolio.html">portfolio</a></li>
-				<li><a href="cls_resume.pdf">resume</a></li>
-				<li><a href="http://twitter.com/cathschmidt">twitter</a></li>
-				<li><a href="http://blog.cathschmidt.com/">web-log</a></li>
-			</ul>
-			<p id="about-brief" class="col1">
-				A few days before Thanksgiving of last year, I was buying a suitcase at a small, family-run store in South Williamsburg, Brooklyn. While getting a thorough luggage demo from the shop owner, sharp, hot cramps hit my stomach out of nowhere. Hard. I quickly chose a rolling bag and wheeled it home as fast as I could, doubled-over and gasping for air all the way, praying that I wouldn't publicly shit myself. 
-				<span><a id="about-read">read on &#9755;</a></span><span><a id="see-less1">see less &#9755;</a></span>
-			</p>
-			<article id="about">
-				<p>In the middle of the night, Davis (Jared Padalecki) goes out to urinate without informing anybody, during which he trips and gets lost in a sandstorm, eventually leading to his death. The group falls into a panic in the morning when they cannot find him, and after a failed search for him, Kelly (Miranda Otto) gets into an argument with Frank, during which he says that walking out of the desert would fail, and that their only option is to await rescue. The group initially agrees, but after surveying the situation and realizing that their value to Amacor is less than they had originally believed, they reconsider and are pitched a radical idea by Elliot, who claims to be an aeronautical engineer: rebuild the remains of their C-119 into a new, functional aircraft. Frank initially refuses, which causes Liddle (Scott Michael Campbell) to wander off on his own out of protest. Frank attempts to go in search for him, following the footsteps Liddle left in the sand. He comes across a valley littered with fresh debris. This turns out to be cargo from the aircraft, which had been dropped when the tail was cut open. Among the debris, he discovers the stripped body of Kyle, full of bullet wounds with shell casings clustered on the ground near him. At this point, Liddle appears and explains that someone had already been there and taken the watch that Kyle won from him in a poker match. Liddle says he will only go back with him if they build the plane, and Frank agrees.</p>
-				<p>They struggle for several weeks building the new aircraft, through dust storms, lack of water, and fighting amongst the group. Rady christens it Phoenix after the legendary bird. A problem evolves when a group of smugglers camp nearby; when the survivors attempt to communicate, the bandits kill Rodney (Tony Curran), but they are killed in a short, fierce skirmish when ambushed by Frank. Later, it is revealed that Elliot's aircraft design experience has been restricted to the design of model aircraft, much to the anger of everyone, especially Ian (Hugh Laurie), who almost kills Elliot. However, they eventually are able to construct the new aircraft and take off, barely in time to escape a larger group of bandit attackers seeking revenge for the murdered smugglers.</p>
-				<p>Through a series of photos, we see what became of the crew when they made it back to civilization. All have been revitalized by the experience: Frank and A.J. start their own airline (appropriately named Phoenix Aviation), Sammi and his wife start their own restaurant (Jeremy and Rady are there to celebrate), Liddle is reunited with his wife and kids, Ian becomes a professional golfer, Kelly is working at an ocean oil rig, and Elliot wears a flight suit on a Flight International magazine cover with the headline: "NASA's New Hope?"
-				</p>
-				<span><a id="see-less2">see less &#9755;</a></span>
-		</div>
-	</section>
-
-	<section id="three">
-		<div class="col1">
-			<h2>themes</h2>
-			<span>here I collect relevant links and ideas. if anybody has something to add to these, or if you wanna chat, just shoot me an <a href="mailto:cschmidt@risd.edu">email</a></span>
-			<ol>
-				<li>typography for non-latin scripts</li>
-				<li>contemporary orientalism</li>
-				<li>skepticism of technology</li>
-			</ol>
-		</div>
-	</section>
-
-	<section id="four">
-		<div class="col1">
-			<h2>friends</h2>
-			<ol id="friends">
-				<li>dan</li>
-				<li>phil</li>
-				<li>kelsey</li>
-				<li>morgan</li>
-				<li>gavin</li>
-
-			</ol>
-		</div>
-	</section>
-</div>
-	<footer>
-	<div id="top" style="text-align:center">
-		&#8963;</br>
-		<p><a hrer="#">top</a></p>
-	</div>
-	<div id="nav">
-		<ul>
-			<li><a href="http://cath.land">home</a></li>
-			<li><a href="http://cath.land/portfolio">portfolio</a></li>
-			<li><a href="http://cath.land/projects">projects</a></li>
-			<li><a href="http://cath.land/themes">themes</a></li>
-			<li><a href="http://cath.land/about">about</a></li>
-		</ul>
-	</div>
-	<div id="contact">
-			<ul class="big">
-				<li>&#9993;</li>
-				<li>&#9872;</li>
-				<li>&#9752;</li>
-				<li>&#63490;</li>
-			</ul>
-			<ul>
-				<li><a href="mailto:cschmidt@risd.edu" target="_blank">email</a></li>
-				<li><a href="cls_resume.pdf">resume</a></li>
-				<li><a href="http://twitter.com/cathschmidt">twitter</a></li>
-				<li><a href="http://blog.cathschmidt.com/">web-log</a></li>
-			</ul>
-	</div>
-</footer>
-
-
 
 
 </body>
