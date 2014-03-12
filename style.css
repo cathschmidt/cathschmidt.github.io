@@ -1,21 +1,24 @@
 /*_________________________________________________________*/
 /*                                                         */
+/*	    	       _   _       _                 _ 		   */
+/*		  ___ __ _| |_| |__   | | __ _ _ __   __| |        */        
+/*		 / __/ _` | __| '_ \  | |/ _` | '_ \ / _` |        */
+/*		| (_| (_| | |_| | | |_| | (_| | | | | (_| |        */ 
+/*		 \___\__,_|\__|_| |_(_)_|\__,_|_| |_|\__,_|        */       
+/*	                                                       */
 /*  Catherine Leigh Schmidt                                */
-/*  last updated 3/5                                       */
+/*  last updated 3/12                                      */
 /*                                                         */
 /*   To Do                                                 */
-/*   - remove detritus                                     */
-/*   - streamline type styles                              */
 /*   - fix webkit styles for ff                            */
-/*   - project names show on hover                         */
-/*                                                         */
-/*                                                         */
-/*                                                         */
-/*                                                         */
 /*                                                         */
 /*                                                         */
 /*_________________________________________________________*/
 
+@font-face {
+	font-family: "Century Schoolbook Mono";
+	src: url('http://cath.land/type.ttf');
+}
 
 * {
 	margin: 0;
@@ -27,12 +30,13 @@
 
 html, body {
   height: 100%;
+  max-height: 100%;
 }
 
 body {
 	color: #333332;
 	font-size: 30px;
-	font-family: "CentSchbook Mono BT";
+	font-family: "Century Schoolbook Mono", serif;
 	padding-bottom: 300px;
 	background-color: floralwhite;
 	text-shadow: 0px 0px 2px #e2e2e1;
@@ -45,11 +49,14 @@ body {
 /*_________________________________________________________*/
 
 a {
-	border-bottom: 2px solid #333332;
+	border-bottom: 1px solid #333332;
 	padding-bottom: 2px;
 	cursor:pointer;
 } a:hover {
 	border-bottom: 0;
+} a.img {
+	border-bottom: 0px !important;
+	padding-bottom: 0px !important;
 }
 
 p {
@@ -57,6 +64,9 @@ p {
 	line-height:30px;
 	padding-bottom: 40px;
 	display:block;
+	clear:both;
+} p a {
+	font-size: 15px;
 }
 
 h1 {
@@ -74,6 +84,11 @@ h2 {
 	padding-bottom: 3px;
 	border-bottom: 2px solid #333332;
 	margin-bottom: 50px;
+} h2 a {
+	padding-bottom: 3px;
+	border-bottom: 2px solid #333332;
+} h2 a:hover {
+	border-bottom: 0;
 }
 
 h3 {
@@ -101,6 +116,10 @@ ul {
 
 ul.big {
 	font-size:30px;
+}
+
+ul figcaption, ol figcaption {
+	text-align: left;
 }
 
 ol {
@@ -132,18 +151,18 @@ img {
 /*  ======                                                 */
 /*_________________________________________________________*/
 
-div.wrapper { /* for sticky footer */
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -200px; 
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto 25%; /* the bottom margin is the negative value of the footer's height */
 }
-div.wrapper:after {
-  content: "";
-  display: block;
+.push {
+	height: 25%; /* .push must be the same height as .footer */
 }
-footer, div.wrapper:after {
-  /* .push must be the same height as footer */
-  height: 200px; 
+footer {
+	height: 20%;
+	margin-top: 5%;
 }
 
 .col1 {
@@ -161,8 +180,6 @@ footer, div.wrapper:after {
 } .col2 img {
 	width: 100%;
 	height:auto;
-	padding-top: 20px;
-	padding-bottom: 20px;
 }
 
 .col3 {
@@ -194,12 +211,16 @@ div.page-title {
 	margin-left: auto;
 } div.page-title figcaption {
 	padding-top: 50px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
 }
 	
 span {
 	display:block;
 	font-size: 16px;
 	padding-top: 30px;
+	padding-bottom: 30px;
 } span a {
 	border-bottom:0;
 } span a:hover {
@@ -213,6 +234,10 @@ p span {
 
 figcaption {
 	font-size: 12px;
+	line-height: 24px;
+	clear:both;
+	text-align: center;
+	padding: 5px;
 }
 
 /*_________________________________________________________*/
@@ -245,6 +270,23 @@ figcaption {
 /*_________________________________________________________*/
 
 /* ----------------------------- */
+/* Back */
+
+#back {
+	position: fixed;
+	top: 35px;
+	left: 25px;
+} #back a {
+	border: 0;
+	-webkit-transition: all .5s;
+} #back a:hover {
+	opacity: .5;
+}
+
+
+
+
+/* ----------------------------- */
 /* Footer */
 
 footer {
@@ -254,24 +296,21 @@ footer {
 	float:right;
 	margin: 10px;
 } footer div#top {
-	width:10%;
+	width:12%;
+	-webkit-transition: all .5s;
+} footer div#attrib {
+	width:43%;
 } footer div#nav {
-	width: 50%;
+	width: 14%;
 } footer div#contact {
-	width: 25%;
+	width: 17%;
 } footer ul {
 	font-size: 15px;
 } footer li {
 	line-height: 30px;
-} footer p a {
-	font-size: 20px;
-	letter-spacing: 2px;
-	margin-top: -30px;
-	border-bottom: 0px solid;
-	line-height: 0px;
-} footer p a:hover {
-	padding-bottom:2px;
-	border-bottom: 2px solid #333335;
+} footer div#top:hover {
+	opacity: .5;
+	cursor: pointer;
 }
 
 
@@ -280,8 +319,8 @@ footer {
 /* Hello */
 
 #hello {
-	font-size: 50px;
-	line-height: 70px;
+	font-size: 35px;
+	line-height: 60px;
 	border-bottom: 8px solid #0e0e0e;
 	cursor:pointer;
 	margin-top:20%;
@@ -297,7 +336,6 @@ footer {
 	border-radius: ;
 } #hello h1 {
 	font-size: 35px;
-	line-height: 60px;
 	display:inline;
 	border-bottom: 0;
 }
@@ -367,11 +405,10 @@ section#portfolio {
 	padding-top: 20%;
 	background-color: seashell;
 	text-align: center;
-	padding-bottom: 300px;
 }
 
 div.pofo {
-	max-width: 21%;
+	max-width: 20%;
 	margin:15px;
 	height:auto;
 	display:block;
@@ -385,8 +422,48 @@ section#portfolio img {
 	max-width: 100%;
 	height:auto;
 	clear:both;
-	-webkit-transition: opacity 1s, box-shadow 1s;
+	-webkit-transition: opacity .5s, box-shadow .5s;
 } section#portfolio img:hover {
+	opacity:.5;
+	box-shadow: 0px 0px 3px #333;
+	cursor:pointer;
+}
+
+/*_________________________________________________________*/
+/*                                                         */
+/*  Pages                                                  */
+/*  =====                                                  */
+/*_________________________________________________________*/
+
+section.page {
+	padding-top:100px;
+}
+
+div.two-col {
+	max-width: 46%;
+}
+
+div.three-col {
+	max-width: 31%;
+}
+
+div.col-layout {
+	margin:10px;
+	height:auto;
+	display:block;
+	float:left;
+	text-align: center
+} div.col-layout img {
+	width: 100%;
+	display: inline;
+	margin:10px;
+	height:auto;
+	clear:both;
+} 
+
+.fancy img{
+	-webkit-transition: opacity 1s, box-shadow 1s;
+} .fancy img:hover {
 	opacity:.8;
 	box-shadow: 0px 0px 3px #333;
 	cursor:pointer;
@@ -394,40 +471,71 @@ section#portfolio img {
 
 /*_________________________________________________________*/
 /*                                                         */
-/*  Portfolio Page                                         */
-/*  ==============                                         */
+/*  Mobile!!                                               */
+/*  ========                                               */
 /*_________________________________________________________*/
 
-section.pofo-page {
-	padding-top:100px;
+@media screen and (max-width: 800px) {
+	.rotate {
+		display:none;
+	}
+
+	.col1 {
+		width: 280px;
+	}
+
+	#hello {
+		border-bottom: 5px solid #333332;
+	}
+
+	h1 {
+		font-size: 20px;
+		line-height: 40px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	section {
+		padding-top: 20px;
+		min-height: 100px;
+		padding-bottom: 20px;
+	}
+
+	ol, ul {
+		font-size: 15px;
+	} li {
+		line-height: 25px;
+	}
+
+	footer div#attrib {
+		display:none;
+	} footer div#contact {
+		width: 40%;
+	} footer div#nav {
+		width: 21%;
+	}
+
+	div.pofo {
+		max-width: 100%;
+		display:none;
+	}
+
+	div#mobile-show {
+		display:block;
+	}
+
+	.wrapper {
+		margin: 0 auto -20%; /* the bottom margin is the negative value of the footer's height */
+		}
+	.push {
+		height: 20%; /* .push must be the same height as .footer */
+	}
+	footer {
+		height: 20%;
+	}
+
 }
-
-div.pofo-column {
-	max-width: 46%;
-	margin:10px;
-	height:auto;
-	display:block;
-	float:left;
-	text-align: center
-} /* div.pofo-page span {
-	opacity: 0;
-} div.pofo-page span:hover {
-	opacity: 1;
-} how to get name of project to show on hover? */
-
-div.pofo-column img {
-	display: inline;
-	margin:10px;
-	max-width: 100%;
-	height:auto;
-	clear:both;
-	-webkit-transition: opacity 1s, box-shadow 1s;
-} div.pofo-column img:hover {
-	opacity:.8;
-	box-shadow: 0px 0px 3px #333;
-	cursor:pointer;
-} 
-
-
 
 
