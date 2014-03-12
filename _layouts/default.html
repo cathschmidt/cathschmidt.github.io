@@ -1,0 +1,46 @@
+<html>
+<head>
+		<link rel="stylesheet" href="/style.css">
+		<title>C.L.S.</title>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script>
+			$(document).ready(function(){ 
+				$("#top").click(function() {
+    				$('html, body').animate({
+      				scrollTop: $(".page-title").offset().top
+    				}, 800);
+				}); 
+
+			});
+		</script>
+</head>
+<body>
+<div class="wrapper">
+	<div id="left" class="rotate">
+
+		catherine leigh schmidt
+
+	</div>
+	<div id="right" class="rotate">
+
+		last updated {{ site.last_updated }}
+
+	</div>
+
+	<div class="page-title">
+		<h1>{{ page.title }}</h1>
+		{% if caption %}
+			<figcaption>{{ page.caption }}</figcaption>
+		{% endif %}
+	</div>
+	<section class="col2 pofo-page">
+
+		{{ content }}
+
+	</section>
+</div>
+
+{% include footer.html %}
+
+</body>
+</html>
