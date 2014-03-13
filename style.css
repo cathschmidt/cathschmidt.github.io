@@ -17,7 +17,7 @@
 
 @font-face {
 	font-family: "Century Schoolbook Mono";
-	src: url('http://cath.land/type.ttf');
+	src: url("http://cath.land/type.ttf");
 }
 
 * {
@@ -36,8 +36,7 @@ html, body {
 body {
 	color: #333332;
 	font-size: 30px;
-	font-family: "Century Schoolbook Mono", serif;
-	padding-bottom: 300px;
+	font-family: "Century Schoolbook Mono", monospace, safaserif;
 	background-color: floralwhite;
 	text-shadow: 0px 0px 2px #e2e2e1;
 }
@@ -65,6 +64,9 @@ p {
 	padding-bottom: 40px;
 	display:block;
 	clear:both;
+	max-width:700px;
+	margin-left:auto;
+	margin-right:auto;
 } p a {
 	font-size: 15px;
 }
@@ -185,7 +187,9 @@ footer {
 	max-width: 100%;
 	margin-left:auto;
 	margin-right:auto;
+	transition: all 1s;
 	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
 }
 
 .col4 {
@@ -285,7 +289,9 @@ figcaption {
 	left: 25px;
 } #back a {
 	border: 0;
+	transition: all .5s;
 	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
 } #back a:hover {
 	opacity: .5;
 }
@@ -304,7 +310,9 @@ footer {
 	margin: 10px;
 } footer div#top {
 	width:12%;
+	transition: all .5s;
 	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
 } footer div#attrib {
 	width:43%;
 } footer div#nav {
@@ -395,11 +403,15 @@ article#about {
 
 #left {
 	left: -50px;
+	transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
 	-webkit-transform: rotate(-90deg);
 }
 
 #right {
 	right: -50px;
+	transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
 	-webkit-transform: rotate(90deg);
 }
 
@@ -429,6 +441,8 @@ section#portfolio img {
 	max-width: 100%;
 	height:auto;
 	clear:both;
+	transition: opacity .5s, box-shadow .5s;
+	-moz-transition: opacity .5s, box-shadow .5s;
 	-webkit-transition: opacity .5s, box-shadow .5s;
 } section#portfolio img:hover {
 	opacity:.5;
@@ -474,6 +488,8 @@ div.col-layout {
 } 
 
 .fancy img{
+	transition: opacity 1s, box-shadow 1s;
+	-moz-transition: opacity 1s, box-shadow 1s;
 	-webkit-transition: opacity 1s, box-shadow 1s;
 } .fancy img:hover {
 	opacity:.8;
