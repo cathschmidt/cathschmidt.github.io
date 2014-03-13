@@ -1,21 +1,25 @@
 <html>
 <head>
-		<link rel="stylesheet" href="/style.css">
-		<title>C.L.S.</title>
+	
+	<link rel="stylesheet" href="http://cath.land/style.css">
+		<title>cls / about</title>
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
-		<script>
+	<script>
+		//animates when "top" is clicked
 			$(document).ready(function(){ 
 				$("#top").click(function() {
     				$('html, body').animate({
       				scrollTop: $(".page-title").offset().top
     				}, 800);
 				}); 
-
 			});
 		</script>
 </head>
 <body>
 <div class="wrapper">
+	<div id="back">
+		<a href=  >&#10229;</a>
+	</div>
 	<div id="left" class="rotate">
 
 		catherine leigh schmidt
@@ -30,8 +34,10 @@
 	<div class="page-title">
 		<h1>cls / about</h1>
 		
+			<figcaption>this is a caption</figcaption>
+		
 	</div>
-	<section class="col2 pofo-page">
+	<section class="col2 page">
 
 		
 
@@ -40,9 +46,12 @@
 
 <footer>
 	<div id="top" style="text-align:center">
-		&#8963;</br>
-		<p><a hrer="#">top</a></p>
+		&#10514;
 	</div>
+	<div id="attrib">
+		<p>This site and all the stuff on it belong to Catherine Leigh Schmidt. This site is hosted by <a href="http://pages.github.com/">github pages</a> and concocted with <a href="http://jekyllrb.com/Jekyll" target="_blank">jekyll</a>.
+	</div>
+
 	<div id="nav">
 		<ul>
 			<li><a href="http://cath.land">home</a></li>

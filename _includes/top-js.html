@@ -1,0 +1,11 @@
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+		//animates when "top" is clicked
+			$(document).ready(function(){ 
+				$("#top").click(function() {
+    				$('html, body').animate({
+      				scrollTop: $(".page-title").offset().top
+    				}, 800);
+				}); 
+			});
+		</script>

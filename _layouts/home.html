@@ -1,0 +1,124 @@
+<html>
+<head>
+	<link rel="stylesheet" href="http://cath.land/style.css">
+	<title>cls</title>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+		$(document).ready(function(){	
+			//footer top scrolling
+			$("#top").click(function() {
+    				$('html, body').animate({
+      				scrollTop: $("#hello").offset().top
+    				}, 800);
+			}); 
+		});
+	</script>
+</head>
+<body>
+<div class="wrapper">
+
+	<div id="left" class="rotate">
+
+		catherine leigh schmidt
+
+	</div>
+	<div id="right" class="rotate">
+
+		last updated {{ site.last_updated }}
+
+	</div>
+
+<!-- Hello -->
+	<div class="col1" id="hello">
+		<h1>catherine leigh schmidt</br> is a graphic design student at the rhode island school of design graduating in 2014.</h1>
+	</div>
+
+<!-- Portfolio -->
+	<section id="portfolio">
+		<div class="col1">
+			<h2>portfolio</h2>
+		</div>
+		<div class="col4" style="clear:both">
+			<div id="mobile-show" class="pofo">
+				<img src="portfolio/blue-steam-catalogue1.jpg">
+				<img src="portfolio/green-dp.jpg">
+			</div>
+			<div class="pofo">
+				<img src="portfolio/red-acp1.jpg" class="vert">
+			</div>
+			<div class="pofo">
+				<img src="portfolio/yellow-color1.jpg">
+				<img src="portfolio/blue-ode1.jpg">
+			</div>
+			<div class="pofo">
+				<img src="portfolio/blue-steam-hc.jpg">
+			</div>
+		</div>
+		<div class="col1">
+		<span><a href="pofo.html">see more &#10230;</a>
+		</div>
+	</section>
+
+<!-- Current Projects -->
+	<section id="two">
+		<div class="col1">
+			<h2>current projects</h2>
+			<ol>
+				<li>RISD STEAM</li>
+				<figcaption>more info about this project in brief</figcaption>
+				<li>Type/India</li>
+				<li>div compositions</li>
+				<li>baby browser</li>
+				<li>prints</li>
+			</ol>
+			<span><a href="#">see more &#10230;</a></span>
+		</div>
+	</section>
+
+<!-- About -->
+	<section id="one">
+		<div class="col1">
+			<h2 style="clear:both;">about me</h2>
+			<span>tl;dr: I like typography, scripts, &amp; tech.</span>
+	
+			<p>
+				A few days before Thanksgiving of last year, I was buying a suitcase at a small, family-run store in South Williamsburg, Brooklyn. While getting a thorough luggage demo from the shop owner, sharp, hot cramps hit my stomach out of nowhere. Hard. I quickly chose a rolling bag and wheeled it home as fast as I could, doubled-over and gasping for air all the way, praying that I wouldn't publicly shit myself.</p>
+				<span><a href="#">read on &#10230;</a></span>
+		</div>
+	</section>
+
+<!-- Themes -->
+	<section id="three">
+		<div class="col1">
+			<h2>themes</h2>
+			<span>here I collect relevant links and ideas. if anybody has something to add to these, or if you wanna chat, just shoot me an <a href="mailto:cschmidt@risd.edu">email</a></span>
+			<ol>
+				<li>typography for non-latin scripts</li>
+				<li>contemporary orientalism</li>
+				<li>skepticism of technology</li>
+			</ol>
+		</div>
+	</section>
+
+<!-- Friends -->
+	<section id="four">
+		<div class="col1">
+			<h2>friends</h2>
+			<ol id="friends">
+				<li><a href="http://danielgiuditta.com/" target="_blank">dan</a></li>
+				<li><a href="http://phil-cao.com/" target="_blank">phil</a></li>
+				<li><a href="kelseylim.com/‎" target="_blank">kelsey</a></li>
+				<li><a href="http://morgan-ruby.com/" target="_blank">morgan</a></li>
+				<li><a href="http://www.gavin-atkinson.com/" target="_blank">gavin</a></li>
+				<li><a href="http://brooks.io" target="_blank">evan</a></li>
+
+			</ol>
+		</div>
+	</section>
+	<div class="push"></div>
+</div>
+
+{% include footer.html %}
+
+</body>
+</html>
