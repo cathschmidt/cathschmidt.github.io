@@ -1,0 +1,175 @@
+<html>
+<head>
+	<meta name="description" content="the personal website of catherine leigh schmidt">
+	<meta name="keywords" content="graphic design">
+	<meta name="author" content="catherine leigh schmidt">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>cls</title>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+		$(document).ready(function(){	
+			//footer top scrolling
+			$("#top").click(function() {
+    				$('html, body').animate({
+      				scrollTop: $("#hello").offset().top
+    				}, 800);
+			}); 
+		});
+	</script>
+</head>
+<body>
+<div class="wrapper">
+
+	<div id="left" class="rotate">
+
+		catherine leigh schmidt
+
+	</div>
+	<div id="right" class="rotate">
+
+		last updated march 2014
+
+	</div>
+
+<!-- Hello -->
+	<div class="col1" id="hello">
+		<h1>catherine leigh schmidt</br> is a graphic design student at the rhode island school of design graduating in 2014.</h1>
+	</div>
+
+<!-- Portfolio -->
+	<section id="portfolio">
+		<div class="col1">
+			<h2><a href="portfolio/index.html">portfolio</a></h2>
+		</div>
+		<div class="col4" style="clear:both">
+			<div id="mobile-show" class="pofo">
+				<a class="img" href="portfolio/index.html"><img src="portfolio/blue-steam-catalogue1.jpg"></a>
+				<a class="img" href="portfolio/index.html"><img src="portfolio/green-dp.jpg"></a>
+			</div>
+			<div class="pofo">
+				<a class="img" href="portfolio/index.html"><img src="portfolio/red-acp1.jpg" class="vert"></a>
+			</div>
+			<div class="pofo">
+				<a class="img" href="portfolio/index.html"><img src="portfolio/yellow-color1.jpg"></a>
+				<a class="img" href="portfolio/index.html"><img src="portfolio/blue-ode1.jpg"></a>
+			</div>
+			<div class="pofo">
+				<a class="img" href="portfolio/index.html"><img src="portfolio/blue-steam-hc.jpg"></a>
+			</div>
+		</div>
+		<div class="col1">
+		<span><a href="portfolio/index.html">see more &#10230;</a>
+		</div>
+	</section>
+
+<!-- Current Projects -->
+	<section id="two">
+		<div class="col1">
+			<h2>current projects</h2>
+			<ol>
+				<li><a href="http://pheel.us/deva">Digital Typolitics of Devanagari</a></li>
+				<figcaption>My degree project, making a typeface in Hindi</figcaption>
+				<li><a href="http://steamwith.us" target="_blank">RISD STEAM</a></li>
+				<figcaption>I'm the president of a student group looking to turn STEM to STEAM</figcaption>
+				<li><a href="http://pheel.us">pheel.us</a></li>
+				<figcaption>I host shared serverspace occupied by microsites created by friends</figcaption>
+				<li>baby browser</li>
+				<figcaption>I'm building my own browser to learn about the browser! More soon...</figcaption>
+			</ol>
+			<!-- <span><a href="#">see more &#10230;</a></span> -->
+		</div>
+	</section>
+
+<!-- About -->
+	<section id="one">
+		<div class="col1">
+			<h2 style="clear:both;">about me</h2>
+			<span>I like typography, scripts, &amp; tech.</span>
+			
+			<ul class="big">
+				<li>&#9993;</li>
+				<li>&#9872;</li>
+				<li>&#9752;</li>
+				<li>&#63490;</li>
+				<li>&#9883;</li>
+			</ul>
+			<ul>
+				<li><a href="mailto:cschmidt@risd.edu" target="_blank">email</a></li>
+				<li><a href="cls_resume.pdf">resume</a></li>
+				<li><a href="http://twitter.com/cathschmidt">twitter</a></li>
+				<li><a href="http://blog.cath.land/">web-log</a></li>
+				<li><a href="http://github.com/cathschmidt">fork me</a></li>
+			</ul>
+			<!-- <p>
+				A few days before Thanksgiving of last year, I was buying a suitcase at a small, family-run store in South Williamsburg, Brooklyn. While getting a thorough luggage demo from the shop owner, sharp, hot cramps hit my stomach out of nowhere. Hard. I quickly chose a rolling bag and wheeled it home as fast as I could, doubled-over and gasping for air all the way, praying that I wouldn't publicly shit myself.</p>
+				<span><a href="#">read on &#10230;</a></span> -->
+		</div>
+	</section>
+
+<!-- Themes -->
+<!--	<section id="three">
+		<div class="col1">
+			<h2>themes</h2>
+			<span>here I collect relevant links and ideas. if anybody has something to add to these, or if you wanna chat, just shoot me an <a href="mailto:cschmidt@risd.edu">email</a></span>
+			<ol>
+				<li>typography for non-latin scripts</li>
+				<li>contemporary orientalism</li>
+				<li>skepticism of technology</li>
+			</ol>
+		</div>
+	</section> -->
+
+<!-- Friends -->
+	<section id="four">
+		<div class="col1">
+			<h2>friends</h2>
+			<ol id="friends">
+				<li><a href="http://danielgiuditta.com/" target="_blank">dan</a></li>
+				<li><a href="http://phil-cao.com/" target="_blank">phil</a></li>
+				<li><a href="http://kelseylim.com" target="_blank">kelsey</a></li>
+				<li><a href="http://morgan-ruby.com/" target="_blank">morgan</a></li>
+				<li><a href="http://www.gavin-atkinson.com/" target="_blank">gavin</a></li>
+				<li><a href="http://brooks.io" target="_blank">evan</a></li>
+
+			</ol>
+		</div>
+	</section>
+	<div class="push"></div>
+</div>
+
+<footer>
+	<div id="top" style="text-align:center">
+		&#10514;
+	</div>
+	<div id="attrib">
+		<p>This site and all the stuff on it belong to Catherine Leigh Schmidt. This site is hosted with <a href="http://pages.github.com/">github pages</a> and concocted with <a href="http://jekyllrb.com/Jekyll" target="_blank">jekyll</a>.
+	</div>
+
+	<div id="nav">
+		<ul>
+			<li><a href="http://cath.land">home</a></li>
+			<li><a href="http://cath.land/portfolio">portfolio</a></li>
+			<li><a href="http://cath.land/projects">projects</a></li>
+			<li><a href="http://cath.land/themes">themes</a></li>
+			<li><a href="http://cath.land/about">about</a></li>
+		</ul>
+	</div>
+	<div id="contact">
+			<ul class="big">
+				<li>&#9993;</li>
+				<li>&#9872;</li>
+				<li>&#9752;</li>
+				<li>&#63490;</li>
+			</ul>
+			<ul>
+				<li><a href="mailto:cschmidt@risd.edu" target="_blank">email</a></li>
+				<li><a href="cls_resume.pdf">resume</a></li>
+				<li><a href="http://twitter.com/cathschmidt">twitter</a></li>
+				<li><a href="http://blog.cath.land/">web-log</a></li>
+			</ul>
+	</div>
+</footer>
+
+</body>
+</html>
