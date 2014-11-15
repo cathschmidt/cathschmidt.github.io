@@ -36,7 +36,7 @@ html, body {
 body {
 	color: #333332;
 	font-size: 30px;
-	font-family: "Century Schoolbook Mono", monospace, safaserif;
+	font-family: "Century Schoolbook Mono", monospace, sansserif;
 	background-color: floralwhite;
 	text-shadow: 0px 0px 2px #e2e2e1;
 }
