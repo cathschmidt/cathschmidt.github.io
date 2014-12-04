@@ -190,8 +190,6 @@ li a {
   font-weight: normal;
   text-decoration: none;
   border-bottom: none;
-} li a:hover {
-  opacity: .5;
 }
 
 .posts {
@@ -202,6 +200,8 @@ li a {
   padding: 3px;
 } .posts li:hover {
   background-color: beige;
+} .posts li:hover a {
+  color: tomato;
 }
 
 #home img {
