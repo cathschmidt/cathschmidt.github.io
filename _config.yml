@@ -20,3 +20,5 @@ safe: true
 server: true
 
 last_updated: march 2014
+
+exclude: [updates]

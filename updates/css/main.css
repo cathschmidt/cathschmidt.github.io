@@ -137,6 +137,14 @@ footer {
   background-color: linen;
 }
 
+div.gohome {
+  text-align: center;
+} div.gohome a {
+  border-bottom: 0;
+} div.gohome a:hover {
+  color: tomato;
+}
+
 /*****************************************************************************/
 /*
 /* Post
