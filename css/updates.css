@@ -75,6 +75,10 @@ a {
   border-bottom: 1px solid #333332;
 }
 
+a:hover {
+  border-bottom: none;
+}
+
 em {
   font-family: "Century Schoolbook Italic", Century, serif;
   font-style: normal;
