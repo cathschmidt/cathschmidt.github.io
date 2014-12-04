@@ -198,6 +198,8 @@ li a {
   font-weight: normal;
   text-decoration: none;
   border-bottom: none;
+} li a:hover {
+  color: tomato;
 }
 
 .posts {
