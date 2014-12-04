@@ -279,6 +279,10 @@ div#inner {
         margin: auto;
     }
 
+    div.header {
+      padding: 10px;
+    }
+
     div.progress span {
       width: 19%;
     } div#outer {
