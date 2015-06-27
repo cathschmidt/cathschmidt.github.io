@@ -1,0 +1,139 @@
+/*
+**
+ * @license
+ * MyFonts Webfont Build ID 3049967, 2015-06-27T00:00:52-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: HalisR-Bold by Ahmet Altun
+ * URL: http://www.myfonts.com/fonts/ahmet-altun/halis-rounded/bold/
+ * 
+ * Webfont: HalisR-Medium by Ahmet Altun
+ * URL: http://www.myfonts.com/fonts/ahmet-altun/halis-rounded/medium/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3049967
+ * Licensed pageviews: 500,000
+ * Webfonts copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
+ * 
+ * © 2015 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2e89ef");
+
+  
+@font-face {
+	font-family: 'HalisRounded';
+	font-weight: 500;
+	font-style: normal;
+	src: url('http://cath.land/webfonts/2E89EF_0_0.ttf') format('truetype');
+	src: url('http://cath.land/webfonts/2E89EF_0_0.eot');
+	src: url('http://cath.land/webfonts/2E89EF_0_0.eot?#iefix') format('embedded-opentype');
+	src: url('http://cath.land/webfonts/2E89EF_0_0.woff2') format('woff2');
+	src: url('http://cath.land/webfonts/2E89EF_0_0.woff') format('woff');	
+} 
+ 
+  
+@font-face {
+	font-family: 'HalisRounded';
+	font-weight: normal;
+	font-style: normal;
+	src: url('http://cath.land/webfonts/2E89EF_1_0.ttf') format('truetype');
+	src: url('http://cath.land/webfonts/2E89EF_1_0.eot');
+	src: url('http://cath.land/webfonts/2E89EF_1_0.eot?#iefix') format('embedded-opentype');
+	src: url('http://cath.land/webfonts/2E89EF_1_0.woff2') format('woff2');
+	src: url('http://cath.land/webfonts/2E89EF_1_0.woff') format('woff');
+}
+
+
+
+/*MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW
+ *MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW
+ *
+ * TYPE 
+ *
+ *MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW
+ *MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWM*/
+
+
+
+* {
+	text-decoration: none;
+}
+
+body {
+	font-size: 14px;
+	font-family: "HalisRounded", sans-serif;
+}
+
+a {
+	color: #333;
+}
+
+h1 {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 50px;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-size: 21px;
+	line-height: 35px;
+	font-style: italic;
+	letter-spacing: 2px
+}
+
+h3,li {
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 500; 
+}
+
+h4 {
+	font-size: 22px;
+	line-height: 35px;
+	font-weight: 500;
+	display: inline-block;
+	border-bottom:4px solid #333332;
+	margin-bottom: 15px;
+}
+
+caption {
+	font-weight: bold;
+}
+
+p {
+	font-size: 17px;
+	line-height: 26px;
+	width: 450px;
+	margin-bottom: 26px;
+} p a {
+	display: inline-block;
+	height: 16px;
+	padding-bottom: 1px;
+	border-bottom: 10px solid #F6FFA5;
+} p a:hover {
+	border-bottom: 10px solid #F6FFA5;
+	background-color: #F6FFA5;
+}
+
+ul {
+	list-style-type: none;
+}
+
+nav a:hover {
+	background-color: #F6FFA5;
+	cursor: pointer;
+}
+
+li a:hover {
+	background-color: #F6FFA5;
+	cursor: pointer;
+}

@@ -1,0 +1,62 @@
+
+/*MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW
+ *MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW
+ *
+ * / p o r t f o l i o
+ *
+ *MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW
+ *MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWM*/
+
+
+/*
+ *
+ * CONTAINER
+ *
+ */
+
+ section.container {
+ 	clear: both;
+ 	width: 90vw; /* used to be 98 */
+ 	margin:auto;
+	margin-top: 150px;
+ }
+
+/*
+ *
+ * ARTICLE
+ *
+ */
+
+a.work {
+ 	display: block;
+ 	/* float: left; */
+ 	width: 29%; /* media query needed here */
+ 	margin:auto;
+ 	padding: 35px 0 35px 0;
+ 	text-align: center;
+ 	-webkit-transition: all 1s;
+} a.work img {
+ 	display: block;
+ 	width: 100%; /* used to be 75% */
+ 	height: auto;
+ 	margin: auto;
+ 	/* padding-bottom: 10px; */
+} caption {
+ 	text-align: center;
+ 	visibility: hidden;
+ 	display: none; /* should be display block */
+ 	padding-top: 15px;
+ 	-webkit-transition: all 1s;
+} a.work:hover {
+ 	cursor: pointer;
+ 	padding-top: 50px;
+ 	-webkit-transition: all 1s;
+} 
+
+
+/* for mobile */
+@media (max-width: 900px) {
+	h1.home {
+		display: none;
+	}
+}

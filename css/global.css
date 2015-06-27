@@ -1,0 +1,117 @@
+
+/*MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW
+ *MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW
+ *
+ * G L O B A L
+ *
+ *MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW
+ *MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWM*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: #333332;
+}
+
+ /*
+ *
+ * HEADER
+ *
+ */
+
+section.header {
+	width: 100vw;
+	position: fixed;
+	top: 0px;
+	height: 100px;
+	clear: both;
+	padding-top: 50px;
+	background: white;
+	z-index: 100;
+} div.org {
+	width: 90vw;
+	margin: auto;	
+} section.header div.left, section.header div.right {
+	width: 25%;
+	float: left;
+	line-height: 30px;
+} div.left {
+	text-align: left;
+} div.right {
+	text-align: right;
+} section.header div.intro {
+	width: 50%;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+} section.header h1 {
+	line-height: 30px;
+} 
+
+section.header div.right {
+	-webkit-transition: margin .5s;
+	display: block;
+	margin-top: -10px;
+} section.header div.right h1 {
+	line-height: 50px;
+} section.header div.right:hover {
+	margin-top: -40px;
+	cursor: pointer;
+}
+
+
+ /* for back arrow */
+
+ section.header div.arrow a{
+ 	display: block;
+ 	-webkit-transition: margin .5s;
+ 	transition: margin .5s;
+ } section.header div.arrow a:hover {
+ 	margin-left: -10px;
+ }
+
+/* for footer */
+
+html {
+	min-height: 100%;
+	position: relative
+}
+
+body {
+	margin-bottom: 200px;
+	clear:both;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 150px;
+	margin-top: 50px;
+	clear: both;
+} footer hr {
+	width: 150px;
+	border: 0;
+	border-top: 6px solid #333;
+	height: 0;	
+	margin-bottom: 10px;
+} footer ul {
+	float: left;
+	display: block;
+	width: 25%;
+} footer ul:last-child {
+	width: 50%;
+}
+
+/* nav */
+nav {
+	display: none;
+	margin-top: -15px;
+}
+
+/* mobile nav */
+div.nav-mobile {
+	display: none;
+}

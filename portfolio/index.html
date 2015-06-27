@@ -1,0 +1,34 @@
+---
+
+layout: portfolio
+title: index
+
+---
+
+<section class="container">
+	{% assign sorted_pages = site.pages | sort:"path" %}
+	{% for page in sorted_pages %}{% if page.category == 'portfolio' %}
+
+	
+
+			<a class="work" id="{{ page.url }}" href="{{ page.url }}" data-title="{{ page.title }}">
+				<img src="{{ page.url }}thumb.jpg">
+				<!-- <caption>{{ page.title }}</caption> -->
+			</a>
+
+	{% endif %}
+	{% endfor %}
+</section>
+
+
+<!-- <section class="container">
+	{% for page in site.pages %}
+	{% if page.category == 'portfolio' %}
+
+			<a class="work" id="{{ page.url }}" href="{{ page.url }}">
+				<img src="{{ page.url }}thumb.jpg">
+				<caption>{{ page.title }}</caption>
+			</a>
+	{% endif %}
+	{% endfor %}
+</section> -->

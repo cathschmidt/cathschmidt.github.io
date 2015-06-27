@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
-	/* color: #333332; */
 	color: white;
 }
 
@@ -12,64 +11,35 @@ html, body {
   font-weight:normal;
 }
 
-body {
-	font-size: 30px;
-	font-family: "Helvetica";
-	background:url('tropics-01.png') no-repeat fixed center center;
+body {	
+	background:url('tumblr.jpg') no-repeat fixed center center;
 	background-size: cover;
-	overflow: hidden;
 }
 
 h1 {
-	font-weight: bold;
-	font-size: 30px;
-	line-height: 50px;
-	text-shadow: 2px 2px 5px darkgreen;
+	font-weight: 500;
+	font-family: "Halis R";
+	font-size: 45px; /* adjustments req for lg screens */
+	line-height: 73px; /* ditto */
+	text-shadow: 2px 2px 5px aqua;
 	letter-spacing: 1px;
 }
-
-h2 {
-	font-size: 20px;
-	text-shadow: 2px 2px 5px darkgreen;
-	letter-spacing: 1px;
-}
-
-/*
- *
- * HEADER
- *
- */
 
 div.header {
-	width: 541px;
+	width: 75vw;
 	margin: auto;
-	margin-top: 28vh;
-} div.header div {
-	float: right;
-} div.header div div {
-	margin-top: 15px;
-	text-align: right;
-	width: 111px;
-	margin-right: 30px;
-} div.header div.intro {
-	width: 400px;
-	margin: auto;
-	padding-bottom: 10px;
-	/* border-bottom:10px solid #333; */
-} div.header h2 {
-	font-size: 13px;
-	font-weight: bold;
-	text-transform: uppercase;
-	line-height: 30px;
-	padding-right: 10px;
-} h2.last {
-	padding-right: 0px;
-} div.header h2 a:hover {
-	padding-bottom: 2px;
-	border-bottom: 4px solid white;
-	cursor: pointer;
+	margin-top: 5vw;
+	margin-bottom: 10vw;
 }
 
+a {
+	transition: all 1s;
+	border-bottom: 11px solid wheat;
+} a:hover {
+	background-color: wheat;
+	color: honeydew;
+	cursor: pointer;
+}
 
 
 

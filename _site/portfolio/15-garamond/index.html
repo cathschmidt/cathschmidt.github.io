@@ -1,0 +1,124 @@
+<html>
+<head>
+	<title>c l s</title>
+	<meta name="description" content="website of catherine leigh schmidt">
+	<link rel='shortcut icon' type='image/x-icon' href='favicon2.ico' />
+	<meta name="keywords" content="graphic design">
+	<meta name="author" content="catherine leigh schmidt">
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" href="/css/type.css">
+	<link rel="stylesheet" href="/css/global.css">
+	<link rel="stylesheet" href="/css/pofo-page.css">
+	<link rel="stylesheet" href="/css/media-queries.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+		//animates when "top" is clicked
+			$(document).ready(function(){ 
+
+				var imnum = parseInt($('.placeholder').attr('id'));
+				for (i = 0; i <= imnum; i++){
+					$(".images").append(
+						"<img src=\"" + i + ".jpg\">" 
+						);
+				}
+
+				$(".right").hover(function() {
+		            $("nav").slideToggle("slow");
+		        });
+			});
+		</script>
+</head>
+<body>
+
+<section class="header">
+	<div class="org">
+		<div class="arrow left">
+			<a href="../"><h1>&larr;</h1></a>
+		</div>
+		<div class="intro">
+			<h1>catherine leigh schmidt<span class="long">&nbsp;&rarr; portfolio</span></h1>
+		</div>
+		<div class="right">
+			<h1>&mdash;</h1>
+				<nav>
+					<ul>
+	<li><a href="/bio">bio</a></li>
+	<li><a href="/portfolio">portfolio</a></li>
+	<li><a href="mailto:cschmidt@alumni.risd.edu?Subject=Hello">email</a></li>
+</ul>
+				</nav>
+		</div>
+	</div>
+</section>
+
+
+<div class="hider">
+<section class="content">
+
+	<div class="images">
+
+		<!-- write a script to generate images from image number -->
+
+		<div class="placeholder" id="5">
+
+		</div>
+	</div>
+
+	<div class="words">
+		<span class="year">2012</span>
+		<h4>Garamond Book</h4>
+
+		<p>This hand-made accordion book illustrates the history and many cuts of the Garamond family of typefaces. The book takes pains to show the origins of eleven different cuts of Garamond, comparing the Claude Garamont specimen to the Jean Jannon punches.</p>
+<p>The book is laser printed. It was created for a type course taught by <a href="http://thedesignoffice.org/person/benjamin-shaykin">Ben Shaykin<a>.
+
+
+
+
+
+	</div>
+
+</section>
+</div>
+
+<div class="nav-mobile">
+	<div class="back-next">
+		<h1 class="back">
+			<a>👈 back</a>
+		</h1>
+		<h1 class="next">
+			<a>next 👉</a>
+		</h1>
+	</div>
+	<h1 class="home"><a href="../../">home</a></h1>
+	<h1><a href="mailto:cschmidt@alumni.risd.edu?Subject=hi">email me</a></h1>
+</div>
+
+<footer>
+	<div class="org">
+		<hr></hr>
+			
+			<ul>
+	<li><a href="/bio">bio</a></li>
+	<li><a href="/portfolio">portfolio</a></li>
+	<li><a href="mailto:cschmidt@alumni.risd.edu?Subject=Hello">email</a></li>
+</ul>
+
+		<ul>
+			<li><a href="http://twitter.com/cathschmidt">twitter</a></li>
+			<li><a href="http://blog.cath.land">blog</a></li>
+			<li><a href="http://github.com/cathschmidt">github</a></li>
+			<li><a href="http://instagram.com/cath.land">insta</a></li>
+		</ul>
+
+		<ul>
+			<li>this site was last updated june 2015<li>
+			<li><a href="/colophon">colophon</a></li>
+		</ul>
+
+	</div>
+</footer>
+
+</body>
+</html>
+

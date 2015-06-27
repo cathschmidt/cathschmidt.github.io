@@ -1,0 +1,122 @@
+<html>
+<head>
+	<title>c l s</title>
+	<meta name="description" content="website of catherine leigh schmidt">
+	<link rel='shortcut icon' type='image/x-icon' href='favicon2.ico' />
+	<meta name="keywords" content="graphic design">
+	<meta name="author" content="catherine leigh schmidt">
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" href="/css/type.css">
+	<link rel="stylesheet" href="/css/global.css">
+	<link rel="stylesheet" href="/css/pofo-page.css">
+	<link rel="stylesheet" href="/css/media-queries.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+		//animates when "top" is clicked
+			$(document).ready(function(){ 
+
+				var imnum = parseInt($('.placeholder').attr('id'));
+				for (i = 0; i <= imnum; i++){
+					$(".images").append(
+						"<img src=\"" + i + ".jpg\">" 
+						);
+				}
+
+				$(".right").hover(function() {
+		            $("nav").slideToggle("slow");
+		        });
+			});
+		</script>
+</head>
+<body>
+
+<section class="header">
+	<div class="org">
+		<div class="arrow left">
+			<a href="../"><h1>&larr;</h1></a>
+		</div>
+		<div class="intro">
+			<h1>catherine leigh schmidt<span class="long">&nbsp;&rarr; portfolio</span></h1>
+		</div>
+		<div class="right">
+			<h1>&mdash;</h1>
+				<nav>
+					<ul>
+	<li><a href="/bio">bio</a></li>
+	<li><a href="/portfolio">portfolio</a></li>
+	<li><a href="mailto:cschmidt@alumni.risd.edu?Subject=Hello">email</a></li>
+</ul>
+				</nav>
+		</div>
+	</div>
+</section>
+
+
+<div class="hider">
+<section class="content">
+
+	<div class="images">
+
+		<!-- write a script to generate images from image number -->
+
+		<div class="placeholder" id="5">
+
+		</div>
+	</div>
+
+	<div class="words">
+		<span class="year">2013</span>
+		<h4>Brand for STEAM</h4>
+
+		<p><a href="http://steamwith.us" target="_blank">STEAM</a>, which is adding Art to STEM (Science Technology Engineering and Math), is a helpful way to envision the artist in society. During my time at RISD, my classmate <a herf="http://sarahpease.com">Sarah Pease</a> founded the <a href="http://risd.steamwith.us">RISD STEAM</a> student group to explore this idea. When I was president of the group I designed an identity for us. I wanted an identity that would be easy to replicate, either by hand or digitally. I also needed it to be customizable for STEAM groups beyond RISD, and simple enough that it could survive periods of transition natural to a student organization.</p>
+<p>A pentagon represents the five initials of STEAM. The form can be manipulated for an infinite number of irregular pentagons. The irregular pentagons represent, abstractly, the individual strengths of each student group. The identity is still recognizable even if it's not reproduced perfectly.</p>
+<p>I debuted the identity via a zine distributed at the New York Art Book Fair. The identity lives on all STEAM materials and is modified for each new STEAM group.</p>
+<p>The group lives on! Please check out the latest <a href="http://steamwith.us/content/catalogue/four/">catalogue</a> to get a feel for the fabulous work that this group does and to learn how to get involved.</p>
+
+	</div>
+
+</section>
+</div>
+
+<div class="nav-mobile">
+	<div class="back-next">
+		<h1 class="back">
+			<a>👈 back</a>
+		</h1>
+		<h1 class="next">
+			<a>next 👉</a>
+		</h1>
+	</div>
+	<h1 class="home"><a href="../../">home</a></h1>
+	<h1><a href="mailto:cschmidt@alumni.risd.edu?Subject=hi">email me</a></h1>
+</div>
+
+<footer>
+	<div class="org">
+		<hr></hr>
+			
+			<ul>
+	<li><a href="/bio">bio</a></li>
+	<li><a href="/portfolio">portfolio</a></li>
+	<li><a href="mailto:cschmidt@alumni.risd.edu?Subject=Hello">email</a></li>
+</ul>
+
+		<ul>
+			<li><a href="http://twitter.com/cathschmidt">twitter</a></li>
+			<li><a href="http://blog.cath.land">blog</a></li>
+			<li><a href="http://github.com/cathschmidt">github</a></li>
+			<li><a href="http://instagram.com/cath.land">insta</a></li>
+		</ul>
+
+		<ul>
+			<li>this site was last updated june 2015<li>
+			<li><a href="/colophon">colophon</a></li>
+		</ul>
+
+	</div>
+</footer>
+
+</body>
+</html>
+

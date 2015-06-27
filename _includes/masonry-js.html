@@ -1,0 +1,34 @@
+    
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
+    <script type="text/javascript">
+    $(window).load(function () {
+        $('.container').masonry({
+            itemSelector : ".work",
+            gutter: 70,
+            percentPosition: true,
+        },
+        function() { $('.container').masonry({ appendedContent: $(this) }); }
+        );
+
+/*
+
+        // for doing both hover and click
+        $(".right").on('click hover', function() {
+            $('.right').css("margin-top", "-40px").animate("slow");
+            $("nav").slideToggle("slow");
+        });
+*/
+
+        $(".right").hover(function() {
+            $("nav").slideToggle("slow");
+        });
+
+/*
+        $(".right").click(function() {
+            $('this').css("margin-top", "-40px");
+            $("nav").slideToggle("slow");
+        }); */
+       
+    });
+    </script>

@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>c l s</title>
+	<meta name="description" content="website of catherine leigh schmidt">
+	<link rel='shortcut icon' type='image/x-icon' href='favicon2.ico' />
+	<meta name="keywords" content="graphic design">
+	<meta name="author" content="catherine leigh schmidt">
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" href="/css/type.css">
+	<link rel="stylesheet" href="/css/global.css">
+	<link rel="stylesheet" href="/css/pofo-page.css">
+	<link rel="stylesheet" href="/css/media-queries.css">
+	{% include image-js.html %}
+</head>
+<body>
+
+{% include header-pofo.html %}
+
+
+<div class="hider">
+<section class="content">
+
+	<div class="images">
+
+		<!-- write a script to generate images from image number -->
+
+		<div class="placeholder" id="{{page.image_number}}">
+
+		</div>
+	</div>
+
+	<div class="words">
+		<span class="year">{{page.year}}</span>
+		<h4>{{page.title}}</h4>
+
+		{{ content }}
+
+	</div>
+
+</section>
+</div>
+
+{% include nav-mobile.html %}
+
+{% include footer.html %}
+
+</body>
+</html>
+

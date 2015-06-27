@@ -1,0 +1,178 @@
+/* phones */
+@media (max-width: 900px) {
+
+	/* type */
+	h1 {
+		font-size: 25px;
+		letter-spacing: normal;
+	}
+	h4 {
+		font-size: 19px;
+		text-align: left;
+	}
+	p {
+		font-size: 16px;
+		line-height: 24px;
+		width: 100%;
+		max-width: 550px;
+		margin-bottom: 26px;
+	}
+
+	/* header */
+	section.header {
+		width: 100%;
+		height: 70px;
+		padding-top:30px;
+	} section.header div.left, section.header div.right {
+		display: none;
+	} section.header div.intro {
+		width: 100%;
+	} /* span.long {
+		display: none;
+	} */
+
+	/* work */ 
+
+	a.work {
+		width: 100%;
+		padding: 5px 0 5px 0;
+	} a.work:hover {
+		padding-top: 0;
+	}
+
+	/* content */
+	section.content h4 {
+		margin-bottom: 10px;
+		border-bottom: 0px;
+	} span.year {
+		display: none;
+	} section.content div.images {
+		width: 100%;
+	} section.content div.words {
+		width: 100%;
+		margin: 0;
+	}
+
+	/* hide footer */
+
+	body {
+		margin-bottom: 0;
+	}
+
+	footer {
+		display: none;
+	}
+
+	/* nav-mobile */
+	div.nav-mobile{
+		display: block;
+		text-align: center;
+		clear: both;
+		margin: auto;
+		margin-bottom: 20px;
+		width: 93vw;
+	} div.back-next {
+		display:none; /* pending -- need to write a script 
+		to dynamically generate links for back & next */
+	}
+	h1.back {
+		float: left;
+	} h1.next {
+		float: right;
+	}
+
+	
+}
+
+
+/* tablets & small res */
+
+
+@media (max-width: 1000px) and (min-width: 900px){
+
+	section.content div.images {
+		width: 29vw;
+	}
+
+	span.long {
+		display: none;
+	}
+
+	section.header div.left, section.header div.right {
+		width: 19%;
+	} section.header div.intro {
+		width: 61%;
+	}
+	
+	a.work {
+		width: 45%;
+		padding: 35px 0 35px 0;
+	}
+
+	div.nav-mobile{
+		display: none;
+	}
+
+}
+
+@media (max-width: 1100px) and (min-width: 1000px){
+
+	section.content div.images {
+		width: 35vw;
+	}
+
+	section.header div.left, section.header div.right {
+		width: 19%;
+	} section.header div.intro {
+		width: 61%;
+	}
+
+	a.work {
+		width: 27%; /* could be 45% */
+		padding: 35px 0 35px 0;
+	}
+
+	div.nav-mobile{
+		display: none;
+	}
+	
+}
+
+@media (max-width: 1200px) and (min-width: 1100px){
+
+	section.content div.images {
+		width: 40vw;
+	}
+
+	section.header div.left, section.header div.right {
+		width: 19%;
+	} section.header div.intro {
+		width: 61%;
+	}
+
+	a.work {
+		width: 28%;
+		padding: 35px 0 35px 0;
+	} 
+
+	div.nav-mobile{
+		display: none;
+	}
+	
+}
+
+
+@media (max-width: 1300px) and (min-width: 1200px){
+
+	section.content div.images {
+		width: 43vw;
+	}
+
+	div.nav-mobile{
+		display: none;
+	}
+	
+}
+
+
+
