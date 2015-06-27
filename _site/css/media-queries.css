@@ -1,5 +1,5 @@
 /* phones */
-@media handheld, screen and (max-device-width: 900px) {
+@media handheld and (max-device-width: 750px), screen and (max-width: 750px) {
 
 	/* type */
 	h1 {
@@ -88,7 +88,7 @@
 /* tablets & small res */
 
 
-@media handheld, screen and (max-width: 1000px) and (min-width: 900px){
+@media handheld, screen and (max-width: 1000px) and (min-width: 750px){
 
 	section.content div.images {
 		width: 29vw;
