@@ -4,7 +4,24 @@
     <script type="text/javascript">
     $(document).ready(function () {
 
-       var $grid = $('.container').masonry({
+        /*
+        var $grid = $('.container').imagesLoaded( function() {
+          // init Masonry after all images have loadex
+
+          $('.container').masonry({
+            itemSelector : ".work",
+            gutter: 70,
+            percentPosition: true,
+          });
+
+        
+          function() { $('.container').masonry({ appendedContent: $(this) }); }
+            );
+
+        }); */
+
+   
+        $('.container').masonry({
             itemSelector : ".work",
             gutter: 70,
             percentPosition: true,
@@ -12,9 +29,6 @@
         function() { $('.container').masonry({ appendedContent: $(this) }); }
         );
 
-       $grid.imagesLoaded( function() {
-          $grid.masonry('layout');
-        });
 
         $(".right").hover(function() {
             $("nav").slideToggle("slow");
