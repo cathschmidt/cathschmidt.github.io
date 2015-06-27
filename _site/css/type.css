@@ -34,7 +34,7 @@
 	font-style: normal;
 	src: url('http://cathschmidt.github.io/webfonts/2E89EF_0_0.ttf');
 	src: url('http://cath.land/webfonts/2E89EF_0_0.eot');
-	src: url('http://cath.land/webfonts/2E89EF_0_0.eot?#iefix');
+	/* src: url('http://cath.land/webfonts/2E89EF_0_0.eot?#iefix'); */
 	/* src: url('http://cath.land/webfonts/2E89EF_0_0.woff2'); */
 	/* src: url('http://cath.land/webfonts/2E89EF_0_0.woff');*/
 } 
@@ -46,7 +46,7 @@
 	font-style: normal;
 	src: url('http://cath.land/webfonts/2E89EF_1_0.ttf');
 	src: url('http://cath.land/webfonts/2E89EF_1_0.eot');
-	src: url('http://cath.land/webfonts/2E89EF_1_0.eot?#iefix');
+	/* src: url('http://cath.land/webfonts/2E89EF_1_0.eot?#iefix'); */
 	/* src: url('http://cath.land/webfonts/2E89EF_1_0.woff2'); */
 	/* src: url('http://cath.land/webfonts/2E89EF_1_0.woff'); */
 }
