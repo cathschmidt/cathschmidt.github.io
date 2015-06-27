@@ -33,10 +33,10 @@
 	font-weight: normal;
 	font-style: normal;
 	src: url('/webfonts/halis.ttf');
-	/* src: url('http://cath.land/webfonts/2E89EF_0_0.eot'); */
-	/* src: url('http://cath.land/webfonts/2E89EF_0_0.eot?#iefix'); */
-	/* src: url('http://cath.land/webfonts/2E89EF_0_0.woff2'); */
-	/* src: url('http://cath.land/webfonts/2E89EF_0_0.woff');*/
+	src: url('http://cath.land/webfonts/2E89EF_0_0.eot');
+	src: url('http://cath.land/webfonts/2E89EF_0_0.eot?#iefix');
+	src: url('http://cath.land/webfonts/2E89EF_0_0.woff2');
+	src: url('http://cath.land/webfonts/2E89EF_0_0.woff');
 } 
  
   
@@ -45,10 +45,10 @@
 	font-weight: 500;
 	font-style: normal;
 	src: url('/webfonts/halisbold.ttf');
-	/* src: url('http://cath.land/webfonts/2E89EF_1_0.eot'); */
-	/* src: url('http://cath.land/webfonts/2E89EF_1_0.eot?#iefix'); */
-	/* src: url('http://cath.land/webfonts/2E89EF_1_0.woff2'); */
-	/* src: url('http://cath.land/webfonts/2E89EF_1_0.woff'); */
+	src: url('http://cath.land/webfonts/2E89EF_1_0.eot');
+	src: url('http://cath.land/webfonts/2E89EF_1_0.eot?#iefix');
+	src: url('http://cath.land/webfonts/2E89EF_1_0.woff2');
+	src: url('http://cath.land/webfonts/2E89EF_1_0.woff');
 }
 
 
