@@ -30,7 +30,7 @@
   
 @font-face {
 	font-family: 'HalisRounded';
-	font-weight: 500;
+	font-weight: normal;
 	font-style: normal;
 	src: url('/webfonts/halis.ttf');
 	/* src: url('http://cath.land/webfonts/2E89EF_0_0.eot'); */
@@ -42,7 +42,7 @@
   
 @font-face {
 	font-family: 'HalisRounded';
-	font-weight: normal;
+	font-weight: 500;
 	font-style: normal;
 	src: url('webfonts/halisbold.ttf');
 	/* src: url('http://cath.land/webfonts/2E89EF_1_0.eot'); */
