@@ -1,5 +1,5 @@
 /* phones */
-@media handheld, screen and (max-width: 900px) {
+@media handheld, screen and (max-device-width: 900px) {
 
 	/* type */
 	h1 {
