@@ -25,7 +25,7 @@
 
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/2e89ef");
+@import url("http://hello.myfonts.net/count/2e89ef");
 
   
 @font-face {
@@ -35,8 +35,8 @@
 	src: url('http://cathschmidt.github.io/webfonts/2E89EF_0_0.ttf');
 	src: url('http://cath.land/webfonts/2E89EF_0_0.eot');
 	src: url('http://cath.land/webfonts/2E89EF_0_0.eot?#iefix');
-	src: url('http://cath.land/webfonts/2E89EF_0_0.woff2');
-	src: url('http://cath.land/webfonts/2E89EF_0_0.woff');	
+	/* src: url('http://cath.land/webfonts/2E89EF_0_0.woff2'); */
+	/* src: url('http://cath.land/webfonts/2E89EF_0_0.woff');*/
 } 
  
   
@@ -47,8 +47,8 @@
 	src: url('http://cath.land/webfonts/2E89EF_1_0.ttf');
 	src: url('http://cath.land/webfonts/2E89EF_1_0.eot');
 	src: url('http://cath.land/webfonts/2E89EF_1_0.eot?#iefix');
-	src: url('http://cath.land/webfonts/2E89EF_1_0.woff2');
-	src: url('http://cath.land/webfonts/2E89EF_1_0.woff');
+	/* src: url('http://cath.land/webfonts/2E89EF_1_0.woff2'); */
+	/* src: url('http://cath.land/webfonts/2E89EF_1_0.woff'); */
 }
 
 
