@@ -16,8 +16,6 @@
     <script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
     <script type="text/javascript">
     $(document).ready(function () {
-
-   
         $('.container').masonry({
             itemSelector : ".work",
             gutter: 70,
@@ -25,7 +23,6 @@
         },
         function() { $('.container').masonry({ appendedContent: $(this) }); }
         );
-
 
         $(".right").hover(function() {
             $("nav").slideToggle("slow");
