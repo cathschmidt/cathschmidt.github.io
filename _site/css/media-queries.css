@@ -1,5 +1,5 @@
 /* phones */
-@media (max-width: 900px) {
+@media screen and (max-width: 900px), screen and (max-device-width: 900px) {
 
 	/* type */
 	h1 {
@@ -88,7 +88,7 @@
 /* tablets & small res */
 
 
-@media (max-width: 1000px) and (min-width: 900px){
+@media screen and (max-width: 1000px) and (min-width: 900px){
 
 	section.content div.images {
 		width: 29vw;
@@ -115,7 +115,7 @@
 
 }
 
-@media (max-width: 1100px) and (min-width: 1000px){
+@media screen and (max-width: 1100px) and (min-width: 1000px){
 
 	section.content div.images {
 		width: 35vw;
@@ -138,7 +138,7 @@
 	
 }
 
-@media (max-width: 1200px) and (min-width: 1100px){
+@media screen and (max-width: 1200px) and (min-width: 1100px){
 
 	section.content div.images {
 		width: 40vw;
@@ -162,7 +162,7 @@
 }
 
 
-@media (max-width: 1300px) and (min-width: 1200px){
+@media screen and (max-width: 1300px) and (min-width: 1200px){
 
 	section.content div.images {
 		width: 43vw;
