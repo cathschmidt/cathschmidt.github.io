@@ -1,6 +1,5 @@
 /* phones */
-@media all and (max-device-width: 750px), (min-device-width: 320px) 
-  and (max-device-width: 480px), screen and (max-width: 750px) {
+@media screen and (max-width: 650px) {
 
 	/* type */
 	h1 {
