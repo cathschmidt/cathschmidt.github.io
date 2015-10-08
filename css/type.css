@@ -118,10 +118,10 @@ p {
 	display: inline-block;
 	height: 16px;
 	padding-bottom: 1px;
-	border-bottom: 10px solid #F6FFA5;
+	border-bottom: 10px solid yellow;
 } p a:hover {
-	border-bottom: 10px solid #F6FFA5;
-	background-color: #F6FFA5;
+	border-bottom: 10px solid yellow;
+	background-color: yellow;
 }
 
 ul {
@@ -129,11 +129,11 @@ ul {
 }
 
 nav a:hover {
-	background-color: #F6FFA5;
+	background-color: yellow;
 	cursor: pointer;
 }
 
 li a:hover {
-	background-color: #F6FFA5;
+	background-color: yellow;
 	cursor: pointer;
 }
