@@ -1,0 +1,3 @@
+[submodule "hwgl"]
+	path = hwgl
+	url = https://github.com/cathschmidt/hwgl
