@@ -61,7 +61,7 @@ a.work img {
  	-webkit-transition: all 1s;
 } a.work:hover {
  	cursor: pointer;
- 	z-index: 1001;
+ 	z-index: 101;
  	-webkit-transition: all 1s;
 } 
 
