@@ -28,7 +28,7 @@ section.header {
 	height: 100px;
 	clear: both;
 	padding-top: 50px;
-	z-index: 100;
+	z-index: 10001;
 } div.org {
 	width: 90vw;
 	margin: auto;	
