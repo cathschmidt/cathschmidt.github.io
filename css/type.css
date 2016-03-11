@@ -1,58 +1,3 @@
-/*
-**
- * @license
- * MyFonts Webfont Build ID 3049967, 2015-06-27T00:00:52-0400
- * 
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed Webfonts(s).
- * 
- * You may obtain a valid license at the URLs below.
- * 
- * Webfont: HalisR-Bold by Ahmet Altun
- * URL: http://www.myfonts.com/fonts/ahmet-altun/halis-rounded/bold/
- * 
- * Webfont: HalisR-Medium by Ahmet Altun
- * URL: http://www.myfonts.com/fonts/ahmet-altun/halis-rounded/medium/
- * 
- * 
- * License: http://www.myfonts.com/viewlicense?type=web&buildid=3049967
- * Licensed pageviews: 500,000
- * Webfonts copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
- * 
- * © 2015 MyFonts Inc
-*/
-
-
-/* @import must be at top of file, otherwise CSS will not work */
-/* @import url("http://hello.myfonts.net/count/2e89ef"); */
-
-  
-@font-face {
-	font-family: 'HalisRounded';
-	font-weight: normal;
-	font-style: normal;
-	src: url('/webfonts/halis.ttf') format('truetype');
-	/* src: url('/webfonts/2E89EF_0_0.eot?#iefix') format('embedded-opentype');
-	src: url('/webfonts/2E89EF_0_0.woff2') format('woff2');
-	src: url('/webfonts/2E89EF_0_0.woff') format('woff');
-	src: url('/webfonts/2E89EF_0_0.eot'); */
-} 
- 
-  
-@font-face {
-	font-family: 'HalisRounded';
-	font-weight: 500;
-	font-style: normal;
-	src: url('/webfonts/halisbold.ttf') format('truetype');
-	/* src: url('/webfonts/2E89EF_1_0.eot?#iefix') format('embedded-opentype');
-	src: url('/webfonts/2E89EF_1_0.woff2') format('woff2');
-	src: url('/webfonts/2E89EF_1_0.woff') format('woff');
-	src: url('/webfonts/2E89EF_1_0.eot'); */
-}
-
-
-
 /*MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW
  *MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW
  *
@@ -69,7 +14,7 @@
 
 body {
 	font-size: 14px;
-	font-family: "HalisRounded", sans-serif;
+	font-family: "Work Sans", sans-serif;
 }
 
 a {
