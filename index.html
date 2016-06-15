@@ -1,105 +1,103 @@
 <html>
 <head>
-<title>cath dot land</title>
-
-<link href='https://fonts.googleapis.com/css?family=Work+Sans:500' rel='stylesheet' type='text/css'>
-
+<meta charset="UTF-8">
+<title>Catherine Leigh Schmidt</title>
 <style>
+
+	@font-face {
+		font-family:"Work Avec";
+		src: url("http://cath.land/WorkAvec-Medium.ttf");
+	}
+
+
 	* {
 		margin: 0;
 		padding: 0;
-		font-weight: normal;
 	}
 
 	body {
-		font-family: "Work Sans", sans-serif;
-		font-size: 1.7vw;
-	}
-
-	h1 {
-		font-size: 2.4em;
-		line-height: 1.3em;
-		padding: 2vw 24vw;
-	
-	}
-
-	h3 {
-		font-size: 2em;
-		text-align: center;
-	}
-
-
-	hr {
-		margin: 2vw 24vw 4vw;
-		border: 0;
-		border-bottom: .3em solid black;
-		height: 0;
+		font-family: "Work Avec", Helvetica, serif;
+		font-size: 2.5vw;
+		line-height: 1.5em;
+		padding: 2em;
 	}
 
 	a {
-		text-decoration: none;
 		color: black;
+		text-decoration: none;
+		padding-bottom: .1em;
+		border-bottom: .1em solid black;
 	} a:hover {
-		background-color: black;
-		color:white;
-		cursor: pointer;
+		border-bottom: 0;
+		background: black;
+		color: white;
 	}
 
-	div.chill {
-		position: fixed;
-		font-size: 2em;
-		padding: 1em;
-		background-color: white;
-		border: .2em solid black;
-		transition: all .3s;
-	} #one {
-		top: -1em;
-		left: 2vw;
-		transform:skew(5deg, -20deg);
-	} #two {
-		transform:skew(-6deg, 40deg) scaleY(1.5);
-		border-radius: 50%;
-		bottom: 3vh;
-		right: 2vw;
-		border: 0;
+	section {
+		float: left;
+		width: 40%;
+	} section.leftcol {
+		padding-right: 15%;
+	}
+
+	div.container {
+		clear: both;
+	}
+
+	p, ol li {
+		padding-bottom: 1em;
+	}
+
+	ul li {
+		font-size: .75em;
+		padding-bottom: .5em;
+		list-style-type: none;
+	} ul {
+		float: left;
+	} ul.things {
+		width: 30%;
+	} ul.links {
+		width: 70%;
 	}
 
 </style>
-
 </head>
+
 <body>
 
-<div class="chill" id="one">
-	it me ! ! 
-</div>
+<div class="container">
 
-<div class="chill" id="two">
-	&#9996;
-</div>
+	<section class="leftcol">
+		<p>Catherine Leigh Schmidt is a designer. She makes fonts, forms, code, and hopefully ideas. She got a BFA in Graphic Design from RISD in 2014. She was born in 1992.</p>
+	
+		<div class="container">
+			<ul class="things">
+				<li>email</li>
+				<li>twitter</br>&nbsp;</li>
+				<li>github</li>
+				<li>aren.na</li>
 
-<h1>
-catherine leigh schmidt<br>
-&mdash;makes fonts for devanagari and latin</br>
-&mdash;sets type in nice ways</br>
-&mdash;writes and researches about type</br>
-&mdash;makes reproducible forms</br>
-&mdash;was born in 1992</br>
-</h1>
+			</ul>
+			<ul class="links">
+				<li><a href="mailto:hi@cath.land">hi@cath.land</a></li>
+				<li><a href="http://twitter.com/cathschmidt">@cathschmidt</a></br>(I tweet a lot)</li>
+				<li><a href="http://github.com/cathschmidt">cathschmidt</a></li>
+				<li><a href="http://are.na/catherine-leigh-schmidt">catherine leigh schmidt</a></li>
+			</ul>
+		</div>
 
-<hr></hr>
+	</section>
 
-<h1><a href="mailto:hi@cath.land">email / hi@cath.land</a>
-</br><a href="http://twitter.com/cathschmidt">twitter / cathschmidt</a>
-</br><a href="http://github.com/cathschmidt">github / cathschmidt</a>
-</br><a href="http://www.are.na/catherine-leigh-schmidt">are.na / catherine leigh schmidt</a></h1>
+	<section class="rightcol">
+		<p>Current Projects</p>
 
-<hr></hr>
+		<ol>
+			<li><a href="https://fonts.google.com/specimen/Yatra+One?subset=devanagari&query=yatra">Yatra</a>, a Devanagari &amp; Latin font based on Mumbai train signage. Started as Fulbright grant project. Released by Google.</li>
+			<li><a href="https://github.com/thedesignoffice/babybindery">Bindery</a>, a Jekyll template that outputs content into a book format. Hit &#8984;P in a browser to make a book with page numbers &amp; marginaelia. Fork &amp; Go! With <a href="http://ltwp.net">LTWP</a>.</li>
+		
+	</section>
 
-<h3>!</br>
-	Website in progress</br>
-	&nbsp; &nbsp;
-</h3>
-
-
-
+</section>
+	
+</body>
 </html>
