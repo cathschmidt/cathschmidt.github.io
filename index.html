@@ -2,13 +2,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Catherine Leigh Schmidt</title>
+<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 <style>
-
-	@font-face {
-		font-family:"Work Avec";
-		src: url("http://cath.land/WorkAvec-Medium.ttf");
-	}
-
 
 	* {
 		margin: 0;
@@ -16,9 +11,12 @@
 	}
 
 	body {
-		font-family: "Work Avec", Helvetica, serif;
-		font-size: 2.5vw;
-		line-height: 1.5em;
+		font-family: "Karla", Helvetica, serif;
+		/* background-color: #bdc7c7; gray color */
+		background-color: white;
+		color: #454a4e;
+		font-size: 2vw;
+		line-height: 1.75em;
 		padding: 2em;
 	}
 
@@ -35,69 +33,102 @@
 
 	section {
 		float: left;
-		width: 40%;
+		/* width: 45%; */
 	} section.leftcol {
-		padding-right: 15%;
+		padding-right: 5vw;
+		width: 50vw;
+	} sectio.rightcol {
+		width: 35vw;
+	} section img {
+		max-width: 100%;
+		height: auto;
+		margin-bottom: 1em;
+		transition: all 1s;        		
+	} section img:hover {
+		cursor: pointer;
+		transform: rotate(2deg);
 	}
 
 	div.container {
 		clear: both;
 	}
 
-	p, ol li {
+	p, ol li, h1 {
 		padding-bottom: 1em;
 	}
 
+	h1 {
+		font-size: 1.5em;
+		line-height: 1.5em;
+		font-weight: normal;
+	}
+
 	ul li {
-		font-size: .75em;
+		font-size: 1em;
 		padding-bottom: .5em;
 		list-style-type: none;
 	} ul {
 		float: left;
-	} ul.things {
-		width: 30%;
+	} ul.media {
+		width: 10vw;
 	} ul.links {
-		width: 70%;
 	}
 
+/* 	.work .leftcol img:nth-child(2n) {
+		width: 50%;
+		height:auto;
+		margin-left: -5vw;
+	}
+
+	.work .rightcol img:nth-child(2n) {
+		width: 70%;
+		height:auto;
+		margin-right: -5vw;
+	} */
+
+.work img {
+    width: 26%;
+    margin: 3%;
+    /* max-height: 200px; */
+}
+
 </style>
-</head>
+<style type="text/css"></style></head>
 
 <body>
 
 <div class="container">
 
 	<section class="leftcol">
-		<p>Catherine Leigh Schmidt is a designer. She makes fonts, forms, code, and hopefully ideas. She got a BFA in Graphic Design from RISD in 2014. She was born in 1992.</p>
-	
-		<div class="container">
-			<ul class="things">
-				<li>email</li>
-				<li>twitter</br>&nbsp;</li>
-				<li>github</li>
-				<li>aren.na</li>
+		<h1>Catherine Leigh Schmidt is a designer. She makes fonts, forms, code, and ideas. She got a BFA in Graphic Design from RISD in 2014. She was born in 1992.</h1>
 
-			</ul>
-			<ul class="links">
-				<li><a href="mailto:hi@cath.land">hi@cath.land</a></li>
-				<li><a href="http://twitter.com/cathschmidt">@cathschmidt</a></br>(I tweet a lot)</li>
-				<li><a href="http://github.com/cathschmidt">cathschmidt</a></li>
-				<li><a href="http://are.na/catherine-leigh-schmidt">catherine leigh schmidt</a></li>
-			</ul>
-		</div>
+		<p>Recent Projects</p>
+
+		<ol>
+			<li><a href="https://fonts.google.com/specimen/Yatra+One?subset=devanagari&amp;query=yatra">Yatra</a>, a Devanagari &amp; Latin font based on Mumbai train signage. Started as Fulbright grant project. Released by Google.</li>
+			<li><a href="https://github.com/thedesignoffice/babybindery">Bindery</a>, a Jekyll template that outputs content into a book format. Hit ⌘P in a browser to make a book with page numbers &amp; marginaelia. Fork &amp; Go! With <a href="http://ltwp.net">LTWP</a>.</li>
+		</ol>
 
 	</section>
 
 	<section class="rightcol">
-		<p>Current Projects</p>
 
-		<ol>
-			<li><a href="https://fonts.google.com/specimen/Yatra+One?subset=devanagari&query=yatra">Yatra</a>, a Devanagari &amp; Latin font based on Mumbai train signage. Started as Fulbright grant project. Released by Google.</li>
-			<li><a href="https://github.com/thedesignoffice/babybindery">Bindery</a>, a Jekyll template that outputs content into a book format. Hit &#8984;P in a browser to make a book with page numbers &amp; marginaelia. Fork &amp; Go! With <a href="http://ltwp.net">LTWP</a>.</li>
-		
+		<div class="container">
+			<ul class="media">
+				<li>email</li>
+				<li>twitter</li>
+				<li>github</li>
+				<li>aren.na</li>
+				<li>linkedin</li>
+				<li>resumé</li>
+			</ul>
+			<ul class="links">
+				<li><a href="mailto:hi@cath.land">hi@cath.land</a></li>
+				<li><a href="http://twitter.com/cathschmidt">@cathschmidt</a>
+				<li><a href="http://github.com/cathschmidt">cathschmidt</a></li>
+				<li><a href="http://are.na/catherine-leigh-schmidt">catherine leigh schmidt</a></li>
+				<li><a href="http://linkedin.com/in/cathschmidt">cathschmidt</a></li>
+				<li><a href="resume.pdf">PDF</a> (cuter than linkedin)</li>
+			</ul>
+		</div>
 	</section>
-
-</section>
-	
-</body>
-</html>
