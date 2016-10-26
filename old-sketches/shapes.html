@@ -1,0 +1,252 @@
+<html>
+	<head>
+		<title>HTML Shapes</title>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script>
+		$(document).ready(function() {
+			$(document).scroll(function() {
+				  	var scrollTop = $(document).scrollTop();
+			  		var one = $("#one").offset().top;
+			  		var two = $("#two").offset().top;
+			  		var three = $("#three").offset().top;
+			  		var four = $("#four").offset().top;
+
+			  		if ((scrollTop > -8) && (scrollTop < two)) {
+			  			$(".sarah").css("border-left", scrollTop-100 + "px");
+			  		} else if ((scrollTop-500) == 0) {
+			  			$(".sarah").css("border-left", "600px");	
+			  		} else {
+			  			$(".sarah").css("border-left", "600px");
+			  		}
+
+				  	if ( (scrollTop > one) && (scrollTop < (two + 500)) ){
+				  		$(".joo").css("margin-top", scrollTop-1500 +"px");
+				  	} else {
+				  		$(".joo").css("margin-top", "207px");
+				  	}
+
+				  	var deg = Math.floor(scrollTop * .08);
+				  	if ( (scrollTop > two) && (scrollTop < (three + 500)) ){
+				  		$(".nari").css("-webkit-transform", "rotate(" + deg + "deg)" );
+				  	} else {
+				  		$(".nari").css("-webkit-transform", "rotate(212deg)");
+				  	} 
+
+				  	var x = Math.floor(scrollTop * .1) - 300;
+				  	var y = Math.floor(scrollTop * .1) - 300;
+				  	if ( (scrollTop > three) && (scrollTop < (four + 500)) ){
+				  		$(".jiali").css({
+				  			"-webkit-transform": "translate(" + x  + "px, " + y +"px)",
+				  			//"-webkit-transform": "rotate(30deg)"
+				  			});
+				  	} else {
+				  		$(".jiali").css("-webkit-transform", "translate(21px, 21px)");
+				  	}
+				});
+		});
+
+		</script>
+
+		<style>
+
+		* {
+			margin:0;
+			padding: 0;
+			color: #0e0e0e;
+		}
+
+		h1 {
+			font-family: Times, "Times New Roman", serif;
+			font-style: italic;
+			font-weight: normal;
+			width: 400px;
+			margin-top: 0;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			text-align: center;
+			line-height: 40px;
+		} h1 a {
+			text-decoration: none;
+			padding-bottom:2px;
+			border-bottom: 1px solid #0e0e0e;
+		} h1 a:hover {
+			border: 0;
+		}
+
+		section {
+			width:100%;
+			min-height: 300px;
+			padding-top: 150px;
+			padding-bottom: 50px;
+			overflow: hidden;
+			/* box-shadow: 1px 0px 20px #e0e0e0; */
+		}
+
+		div.container {
+			width: 500px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+		.saad{
+			width: 70px;
+			height: 100px;
+			border: 50px dotted;
+			border-color: rgba(255,30,30, .9);
+			border-left: 20px;
+			border-left-width: 30px;
+			border-top-width: 90px;
+			border-bottom-width:60px; 
+			border-right-width: 10px;
+			border-right-color: rgba(255,197,27,1);
+			padding: 80px;
+			border-left-color: rgba(255,30,30, .9);
+			position: relative;
+			float:right;
+			margin-right:160px;
+			margin-top:-50px;
+			background-color: transparent;
+			-webkit-transform: rotate(-20deg);
+		}
+
+		.nari{
+			width: 450px;
+			height: 4px;
+			background: rgb(20, 50, 80);
+			-webkit-transform:rotate(97deg);
+			position:relative;
+			float:right;
+			margin-top: 275px;
+			margin-right:-150px;
+		}
+
+		.maria {
+				background: #ffe315;
+				width: 150px;
+				height: 300px;
+				opacity: .5;
+				
+				position: relative;
+				margin-top:100px;
+				margin-left:110px;
+				
+				border-style:solid;
+				border-width:20px;
+				border-color: #ffef8f #ffef8f #ffce00 #ffce00;
+				border-top-left-radius:10px;
+				border-bottom-right-radius:10px;
+				border-top-right-radius:40px;
+				border-bottom-left-radius:40px;
+				-webkit-transform: rotate(110deg);
+			}
+
+			.joo {
+				border-top: 100px solid rgb(255,80,100);
+				border-left: 60px solid transparent;
+				border-right: 15px solid transparent;
+				height: 0;
+				width: 50px;
+				margin-left: 170px;			
+				margin-top: -366px;
+				position: relative;
+				-webkit-transform: rotate(63deg);
+			}
+
+			.jiali{
+		
+				border-bottom: 40px solid rgba(200,10,10,1);
+				border-left: 10px solid rgba(100,10,10,1);
+				border-right: 10px solid rgba(200,110,10,1);
+		
+				height: 10px;
+				width: 10px;
+			
+				position: relative;
+				margin-top: 200px;
+				margin-left:450px;
+
+				background:transparent;
+				-webkit-transform: rotate(30deg);
+				box-shadow: -100px 200px 10px rgba(40,0,0,.8);
+
+				z-index: 1;
+				}	
+
+			.phil{
+				width:300px;
+				height:700px;
+				float:left;
+				background-color:#ff7300;
+				border-radius:50%;
+				margin-top:10px;
+				border:2px dashed white;
+				
+
+				position:relative;
+				margin-left: 250px;
+				margin-top: -180px;
+				-webkit-transform: rotate(-55deg);
+			}
+
+			.sarah {
+				border-left: 600px solid transparent;
+				border-right: 17px solid rgba(255,30,30,.6);
+				border-bottom: 282px solid rgba(255,225, 120, 1);
+				border-bottom-left-radius:90px;
+				border-bottom-right-radius:40px red;
+				margin-top:400px;
+				margin-left:-500px;
+				width: 1px;
+				height: 1px;
+				-webkit-transform:rotate(-10deg)
+				}
+
+			.anne-mary{
+			 width:200px; height:350px; 
+    		 border-top:40px solid rgba(255,30,30,.9);
+    		 border-left:11px solid rgba(255,30,30,.9);
+    		 border-right:129px solid transparent; 
+    		 margin-top: -140px;
+    		 margin-left: 170px;
+    		 margin-bottom: 50px;
+    		 border-bottom-right-radius: 50%;
+    		 -webkit-transform: rotate(-70deg);
+    		 overflow:visible;
+    		 box-shadow: -100px 100px 2000px rgba(160, 180, 255, 1);
+			}
+
+		</style>
+	</head>
+	<body>
+		<section id="one" style="background:linen;">
+			<h1>two divs</h1>
+			<div class="container">
+				<div class="sarah"></div>
+				<div class="anne-mary"></div>
+			</div>
+		</section>
+		
+		<section id="two" style="background:azure;">
+			<div class="container">
+				<div class="maria"></div>
+				<div class="joo"></div>	
+			</div>
+		</section>
+		
+		<section id="three" style="background:floralwhite;">
+			<div class="saad"> </div>
+			<div class="nari"> </div>
+		</section>
+
+		<section id="four" style="background:mintcream;margin-bottom: 200px">
+			<div class="jiali"></div>
+			<div class="phil"></div>
+		</section>
+
+		<section>
+			<h1>inspired by John Caserta's <a href="http://db13.charrette.ws">Digital Bits</a> Form &amp; Communication Workshop at the Rhode Island School of Design.</h1>
+		</section>
+
+	</body>
+</html>
