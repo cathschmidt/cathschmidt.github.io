@@ -11,8 +11,13 @@
 <script>
 	$(document).ready(function(){
 
-		//scroll-top button for mobile 
+		// scroll-top button for mobile,
+		// and fading projects in  
 		$(document).scroll(function(){
+
+			// projects coming in nice & smoov
+			$(".work").addClass("fade-nice");
+
 			var scrollTop = $(document).scrollTop();
 			//var work = $(".work").offset().top - 30;
 			var work = 15;

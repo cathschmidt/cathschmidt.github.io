@@ -78,8 +78,10 @@ span.date {
 	clear:both;
 	width: 98vw;
 	margin: auto;
-	margin-top: 80vh;
+	margin-top: 100vh;
+	opacity: 0;
 	display: block;
+	transition: all 1.5s ease;
 } .work article { /* grid of images */
 	text-align: center;
 	float: left;
@@ -92,7 +94,10 @@ span.date {
 	height: auto;
 } article:hover {
 	cursor: pointer;
-} 
+} .fade-nice { /* added on scroll */
+	opacity: 1;
+	margin-top: 75vh;
+}	
 
 .shadow { /* adding to square stuff */
 	box-shadow: .25em .25em 0px rgba(0,0,0,.5);
