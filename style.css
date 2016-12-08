@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 body {
@@ -19,6 +20,17 @@ body::-webkit-scrollbar-track { /* scrollbar styling lol */
 	width: .5em;
 } body::-webkit-scrollbar-thumb {
 	background-color: yellow;
+}
+
+p::selection { /* i'm a tool */
+	color: red;
+	background: yellow;
+} p::-moz-selection {
+	background: #ff44c4;
+} a::selection {
+	background: #ff44c4;
+} a::-moz-selection {
+	background: #ff44c4;
 }
 
 .no-scroll {
@@ -118,8 +130,7 @@ span.date {
 	border-bottom:1px solid red;
 } .postit a:hover {
 	color: yellow;
-} .postit:hover {
-} 
+}
 
 /* draggable */
 .draggable:hover {
@@ -151,9 +162,13 @@ span.ex{ /* x out button */
 	text-align: right;
 	top: -.75em;
 	right:-1em;
+	transition: transform 2s ease;
 } span.ex:hover {
 	color: blue;
 	cursor: pointer;
+} .flippy {
+	transform: scale(1.75);
+    transform-origin: right;
 }
 
 .intro { /* micro bio post-it */
@@ -197,6 +212,9 @@ span.ex{ /* x out button */
 	height: 2em;
 	left: 4vw;
 	z-index: 3;
+	transition: all .5s ease;
+} .haha-bye {
+	transform: rotate(5deg);
 }
 
 .seriously {

@@ -1,7 +1,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>catherine leigh schmidt</title>
+<title>CLS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -10,13 +11,14 @@
 
 <script>
 	$(document).ready(function(){
+		// projects coming in nice & smoov
+			$(".work").addClass("fade-nice");
 
 		// scroll-top button for mobile,
-		// and fading projects in  
+		// and postits move ?
 		$(document).scroll(function(){
-
-			// projects coming in nice & smoov
-			$(".work").addClass("fade-nice");
+			// div class haha
+			$(".ex").addClass("flippy");
 
 			var scrollTop = $(document).scrollTop();
 			//var work = $(".work").offset().top - 30;
