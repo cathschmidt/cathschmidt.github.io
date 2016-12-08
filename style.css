@@ -1,7 +1,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
 }
 
 body {
@@ -26,11 +25,14 @@ p::selection { /* i'm a tool */
 	color: red;
 	background: yellow;
 } p::-moz-selection {
-	background: #ff44c4;
+	color: red;
+	background: yellow;
 } a::selection {
-	background: #ff44c4;
+	color: red;
+	background: yellow;
 } a::-moz-selection {
-	background: #ff44c4;
+	color: red;
+	background: yellow;
 }
 
 .no-scroll {
@@ -212,9 +214,6 @@ span.ex{ /* x out button */
 	height: 2em;
 	left: 4vw;
 	z-index: 3;
-	transition: all .5s ease;
-} .haha-bye {
-	transform: rotate(5deg);
 }
 
 .seriously {
