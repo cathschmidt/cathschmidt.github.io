@@ -1,0 +1,456 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CLS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://npmcdn.com/draggabilly@2.1/dist/draggabilly.pkgd.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		// projects coming in nice & smoov
+			$(".work").addClass("fade-nice");
+
+		// scroll-top button for mobile,
+		// and x animation
+		$(document).scroll(function(){
+			// div class haha
+			$(".ex").addClass("flippy");
+
+			var scrollTop = $(document).scrollTop();
+			//var work = $(".work").offset().top - 30;
+			var work = 15;
+			//use css media query to check
+			var width = $('.mobile-info').is(':visible');
+			// if the scroll position is below the beginning of the work and we're on mobile
+			if ((scrollTop > work) && (width == true)) {
+				$(".top").fadeIn(400);
+				console.log('Hi');
+			} else {
+				$(".top").fadeOut(200);
+				console.log('Nope');
+			}
+		});
+
+		$(".top").click(function(){
+			$("html, body").animate({ scrollTop: "0px" });
+		});
+
+
+		//draggable stuff
+		var $draggable = $('.draggable').draggabilly();
+
+		//make dragged thing, clicked thing on top
+		var zcount = 40; //set z-index
+		$draggable.on( 'dragStart', function(){
+			$(this).css("z-index", zcount);
+			zcount = zcount + 1; //increment z-index so dragged thing is always on top
+		});
+
+		$(".draggable").click(function(){
+			$(this).css("z-index", zcount);
+			zcount = zcount + 1; //increment z-index so dragged thing is always on top
+		});
+		// close button for post-its
+		$(".ex").click(function(){
+			$(this).parent().fadeOut(200);
+		});		 
+		//close (a post-it) onclick
+		$(".close-on-click").click(function(){
+			$(this).fadeOut(200);
+		}); 
+
+		// modal on click of pofo images
+		$("article").click(function(){
+			//selected caption
+			var caption = $("." + $(this).attr("alt"));
+			//both caption, screen, and ex button fade in
+			$(".screen").fadeIn(400);
+			caption.fadeIn(400);
+			$(".modal-ex").fadeIn(400);
+			$('body').addClass("no-scroll");
+		});
+
+		//click modal ex to get out of caption
+		$(".modal-ex").click(function(){
+			$('body').removeClass("no-scroll");
+			$(".caption").fadeOut(200);
+			$(this).fadeOut(200);
+			$(".screen").fadeOut(400);
+		});
+		// or click screen to get out of caption
+		$(".screen").click(function(){
+			$('body').removeClass("no-scroll");
+			$(".modal-ex").fadeOut(200);
+			$(".caption").fadeOut(200);
+			$(this).fadeOut(400);
+		});
+
+		//info back
+		$(".more-info").click(function(){
+			$(".screen").fadeIn(400);
+			$(".info-back").fadeIn(400);
+			$(".modal-ex").fadeIn(400);
+			$('body').addClass("no-scroll");
+		});
+
+
+	});
+</script>
+
+</head>
+
+<body>
+<!--
+(((＼（＠v＠）／)))
+POST-ITS YEE
+-->
+<div class="intro postit draggable">
+	<span class="ex">×</span>
+	Catherine Leigh Schmidt is a designer who makes fonts, websites, &amp; printed stuff. She got a BFA in Graphic Design from RISD in 2014.
+</div>
+<div class="info postit draggable">
+	<span class="ex">×</span>
+	<ul class="media">
+		<li>email</li>
+		<li>twitter</li>
+		<li>github</li>
+		<li>are.na</li>
+		<li>linkedin</li>
+		<li>resumé</li>
+	</ul>
+	<ul class="links">
+		<li><a href="mailto:hi@cath.land">hi@cath.land</a></li>
+		<li><a href="http://twitter.com/cathschmidt">@cathschmidt</a>
+		<li><a href="http://github.com/cathschmidt">cathschmidt</a></li>
+		<li><a href="http://are.na/catherine-leigh-schmidt">catherine leigh schmidt</a></li>
+		<li><a href="http://linkedin.com/in/cathschmidt">cathschmidt</a></li>
+		<li><a href="resume.pdf">PDF</a> (cuter than linkedin)</li>
+	</ul>
+</div>
+
+<div class="postit imlooking rotate close-on-click" style="display:none">
+	<span class="ex">×</span>
+	<span class="blink">I'm looking for work ! !</span>
+</div>
+
+<div class="postit haha draggable">
+	<span class="ex">×</span>
+	I PROMISE YOU I KNOW HOW TO SET TYPE 
+</div>
+
+<div class="postit seriously draggable">
+	<span class="ex">×</span>
+	drag me</br>😉😉😉</br>
+	<a href="mailto:hi@cath.land">email me</a></br>😎😎😎
+</div>
+
+<div class="more-info"><span class="box">info</span></div>
+
+<!--
+( ͡☉⁄ ⁄ ͜⁄ ͜ʖ̫⁄ ⁄ ͡☉)
+INFO FOR MOBILE OTHERWISE HIDDEN
+-->
+<div class="top"><span class="box">top</span></div>
+<div class="mobile-info">
+	<p>Catherine Leigh Schmidt is a designer who makes fonts, websites, &amp; printed stuff. She got a BFA in Graphic Design from RISD in 2014.</p>
+	<div style="clear: both; display: inline-block">
+		<ul class="media">
+			<li>email</li>
+			<li>twitter</li>
+			<li>github</li>
+			<li>are.na</li>
+			<li>linkedin</li>
+			<li>resumé</li>
+		</ul>
+		<ul class="links">
+			<li><a href="mailto:hi@cath.land">hi@cath.land</a></li>
+			<li><a href="http://twitter.com/cathschmidt">@cathschmidt</a>
+			<li><a href="http://github.com/cathschmidt">cathschmidt</a></li>
+			<li><a href="http://are.na/catherine-leigh-schmidt">catherine leigh schmidt</a></li>
+			<li><a href="http://linkedin.com/in/cathschmidt">cathschmidt</a></li>
+			<li><a href="resume.pdf">PDF</a> (cuter than linkedin)</li>
+		</ul>
+	</div>
+</div>
+
+<!--
+( ͡☉⁄ ⁄ ͜⁄ ͜ʖ̫⁄ ⁄ ͡☉)
+WORK WORK WORK WORK WORK WORK
+-->
+<div class="work">
+
+	<article alt="yatra">
+		<img src="work/yatra-tha.png">
+	</article>
+
+	<article alt="bindery">
+		<img src="work/bindery.gif" class="shadow">
+	</article>
+
+	<article alt="campus-map">
+		<img src="work/campusmap.png">
+	</article>
+
+	<article alt="everlane">
+		<img src="work/everlane.png" class="small shadow">
+	</article>
+
+	<article alt="risd-signs">
+		<img src="work/risdsign.png" class="smaller">
+	</article>
+
+	<article alt="yatra-site">
+		<img src="work/yatra-specimen-site.png" class="shadow">
+	</article>
+
+	<article alt="phonebook">
+		<img src="work/phonebook.png" class="smaller">
+	</article>
+
+	<article alt="maharam">
+		<img src="work/maharam.png">
+	</article>
+
+	<article alt="two-divs">
+		<img src="work/twodivs.gif" class="shadow">
+	</article>
+
+	<article alt="acp">
+		<img src="work/acp.png">
+	</article>
+
+	<article alt="fellowship">
+		<img src="work/fellowship.png" class="shadow small">
+	</article>
+
+	<article alt="soylent">
+		<img src="work/soylent.png">
+	</article>
+
+	<article alt="steam">
+		<img src="work/steam.png">
+	</article>
+
+	<article alt="htmloutput">
+		<img src="work/htmloutput.png">
+	</article>
+
+	<article alt="chini">
+		<img src="work/chini.png" class="small">
+	</article>
+
+	<article alt="color">
+		<img src="work/color.png">
+	</article>
+
+</div>
+
+
+<!--
+☆*: .｡. o(≧▽≦)o .｡.:*☆
+CAPTIONS
+-->
+<div class="screen"></div>
+<span class="modal-ex">×</span>
+
+<div class="caption info-back">
+	<h2>Hi!!</h2>
+	<p>Catherine Leigh Schmidt is a designer who makes fonts, websites, &amp; printed stuff. She got a BFA in Graphic Design from RISD in 2014. She built this website with her bare hands.</p>
+	<ul class="media">
+		<li>email</li>
+		<li>twitter</li>
+		<li>github</li>
+		<li>are.na</li>
+		<li>linkedin</li>
+		<li>resumé</li>
+	</ul>
+	<ul class="links">
+		<li><a href="mailto:hi@cath.land">hi@cath.land</a></li>
+		<li><a href="http://twitter.com/cathschmidt">@cathschmidt</a>
+		<li><a href="http://github.com/cathschmidt">cathschmidt</a></li>
+		<li><a href="http://are.na/catherine-leigh-schmidt">catherine leigh schmidt</a></li>
+		<li><a href="http://linkedin.com/in/cathschmidt">cathschmidt</a></li>
+		<li><a href="resume.pdf">PDF</a> (cuter than linkedin)</li>
+	</ul>
+</div>
+
+<div class="caption yatra">
+	<h2>Yatra <span class="date">2016</span></h2>
+
+	<p>Yatra is a Devanagari and Latin display font based on the hand-painted signage of the Mumbai Railways. It's available for free on <a href="https://fonts.google.com/specimen/Yatra+One">Google Fonts</a>. Yatra was the result of research from a Fulbright scholarship in India.</p>
+
+	<p><a href="http://cath.land/yatra-one/specimen">Check out the specimen</a></p>
+
+	<img src="work/yatra/yatra1.jpg">
+	<img src="work/yatra/yatra2.png">
+
+	<p>Yatra mimics the high-contrast, modulated, chunky style of Mumbai rail sign painting. Like the rail signs, Yatra includes basic Marathi support. Yatra aims to illustrate how typography for civic contexts, rather than aiming for simplicity and universality, can instead retain local and historic qualities.</p>
+
+	<img src="work/yatra/yatra3.png">
+
+	<p>Yatra has a pretty complete Devanagari glyphset and supports Adobe Latin 3 with a few fun extras. A few Marathi alternates are also included.</p>
+
+	<img src="work/yatra/yatra4.gif">
+	<img src="work/yatra/yatra5.jpg">
+
+</div>
+
+<div class="caption bindery">
+	<h2>Bindery <span class="date">2016</span></h2>
+
+	<a href="https://github.com/thedesignoffice/babybindery">Bindery</a> is an open-source Jekyll template that outputs content into a book format. Hit ⌘P in a browser to make a book with page numbers &amp; marginaelia. A collaboration <a href="http://ltwp.net">LTWP</a> for the <a href="http://thedesignoffice.org/">The Design Office</a>.</p>
+
+	<p>Bindery lets you keep your web &amp; print content in one place. The template does the work of formatting your content for print.</p>
+	<p>We envision Bindery being used for show catalogs, blogs, and portfolios. It's currently being used to serve <a href="http://ds1618.risd.gd/">RISD GD's Design Studio curriculum</a> online &amp; in print.</p>
+
+	<p>I worked on Jekyll configuration and stylesheets for this project. I also designed the look &amp; feel of the documentation site.</p>
+	<img src="work/bindery/bindery1.png">
+	<img src="work/bindery/bindery2.png">
+	<img src="work/bindery/bindery3.png">
+
+</div>
+
+<div class="caption yatra-site">
+	<h2>Yatra Specimen Site <span class="date">2016</span></h2>
+
+	<p>I made a web specimen to showcase my font, Yatra. I wanted to show Yatra at large sizes, as it was meant to be. <a href="http://cath.land/yatra-one/specimen">Check out the specimen</a>.</p>
+
+	<img src="work/yatra-site/yatra-site1.png">
+	<img src="work/yatra-site/yatra-site2.png">
+	<img src="work/yatra-site/yatra-site3.png">
+	<p>Yatra is a Devanagari and Latin display font based on the hand-painted signage of the Mumbai Railways. It's available for free on <a href="https://fonts.google.com/specimen/Yatra+One">Google Fonts</a>. Yatra was the result of research from a Fulbright scholarship in India.</p>
+
+</div>
+
+<div class="caption campus-map">
+	<h2>RISD Campus Map <span class="date">2016</span></h2>
+	<p>While working for RISD in their Media Group I was asked to redesign the campus map for visiting prospective students. The map also serves as a take-away, with information about the school.</p>
+	<img src="work/campus-map/campusmap1.png">
+	<img src="work/campus-map/campusmap2.png">
+	<img src="work/campus-map/campusmap3.png">
+
+	<p>Art directed by Micah Barrett.</p>
+</div>
+
+<div class="caption risd-signs">
+	<h2>RISD Campus Signs <span class="date">2016</span></h2>
+	<p>While working for RISD in their Media Group I was asked to redesign the sandwich board signs put around campus at several points in the school year. The original design was too playful to feel official. The redesign is easier to produce, more flexible, more sober, and follows RISD's new type standards.</p>
+	<img src="work/risd-signs/risdsign1.jpg">
+	<img src="work/risd-signs/risdsign2.jpg">
+	<p>I also designed a standards manual to accompany the system.</p>
+	<img src="work/risd-signs/risdsign3.jpg">
+	<p>Art directed by Micah Barrett.</p>
+</div>
+
+<div class="caption everlane">
+	<h2>some work for Everlane <span class="date">2015</span></h2>
+	<p>I did some contracting for Everlane. I made a press release, designed some emails, and did some typesetting.</p> 
+	<img src="work/everlane/everlane1.png">
+	<img src="work/everlane/everlane2.png">
+	<img src="work/everlane/everlane3.png">
+	<img src="work/everlane/everlane4.png">
+	<p>Art Director: Alexandra Spunt, Creative Director: Lee Cerre. Art Direction by Quinn Cantwell. Photos shot by Fahim Kassam. Production by Cristina Viseu. Everything belongs to Everlane.</p>
+</div>
+
+<div class="caption phonebook">
+	<h2>RISD Phonebook Sketch <span class="date">2016</span></h2>
+	<p>A little sketch for RISD's physical phonebook, made while I was working in their Media Group.</p>
+	<p>Art directed by Micah Barrett.</p>
+</div>
+
+<div class="caption maharam">
+	<h2>RISD Maharam STEAM Fellowship event <span class="date">2016</span></h2>
+	<p>While working at the RISD Media Group, I designed materials for the RISD Maharam STEAM Fellowship 5 year celebration. This take-away gave guests info about the fellowship while highlighting past and present fellows.</p>
+	<img src="work/maharam/maharam1.png">
+	<img src="work/maharam/maharam2.png">
+	<p>Art directed by Micah Barrett.</p>
+</div>
+
+<div class="caption two-divs">
+	<h2>Two Divs Sketches <span class="date">2013</span></h2>
+	<p>While TA-ing for John Caserta's web workshops at RISD, I made some <a href="http://cath.land/old-sketches/shapes.html">web sketches</a> to show to students. In the course students were encouraged to use the browser as an expressive drawing tool.</p>
+	<img src="work/two-divs/twodivs1.png">
+</div>
+
+<div class="caption acp">
+	<h2>Academic Commons Poster <span class="date">2013</span></h2>
+	<p>I designed a poster for RISD's Academic Commons Program that could be left intact or divided into mail-box sized leaflets.</p>
+	<img src="work/acp/acp1.jpg">
+</div>
+
+<div class="caption fellowship">
+	<h2>Design Office Fellowship Poster <span class="date">2014</span></h2>
+	<p>A web-to-print poster calling for fellows for the Design Office Fellowship. The website is the poster. The sun skews on scroll, so you can have infinite permutations of the same poster, depending on when you press ⌘P. A collaboration with <a href="http://johncaserta.com">John Caserta</a>.</p>
+	<img src="work/fellowship/fellowship1.jpg">
+	<img src="work/fellowship/fellowship2.jpg">
+	<img src="work/fellowship/fellowship3.jpg">
+</div>
+
+
+<div class="caption soylent">
+	<h2>Soylent Brand <span class="date">2013</span></h2>
+	<p>Before Soylent was branded by OKFocus, I made a tongue-in-cheek brand identity for a school project 😉</p>
+
+	<p>I proposed an identity that would be cheeky instead of clinical or futuristic. The identity appeals to a soylent drinker's sense of irony.</p>
+
+	<p>Also proposed was the tagline It's Perfect™</p>
+
+	<img src="work/soylent/soylent1.jpg">
+	<img src="work/soylent/soylent2.png">
+	<img src="work/soylent/soylent4.jpg">
+
+</div>
+
+<div class="caption steam">
+	<h2>STEAM Indentity <span class="date">2013</span></h2>
+	<p>When I was a student I was the president of the STEAM (Science, Technology, Enginering, Art, and Math) student group because I liked to code. I designed an identity that was flexible, extensible, and recognizable when remade by someone without the same software as me. The identity was a part of a toolkit that could be shared with new STEAM student groups at other universities.</p>
+
+	<img src="work/steam/steam1.jpg">
+	<img src="work/steam/steam2.png" class="smaller">
+	<img src="work/steam/steam3.jpg">
+
+</div>
+
+<div class="caption htmloutput">
+	<h2>for / with / in <span class="date">2014</span></h2>
+	<p><a href="http://html-output.risd.gd">for / with / in</a>, a project formally known as "html-output", is a website which prints to a <a href="http://drawdown.bigcartel.com/product/for-with-in-graphic-design-for-with-and-in-the-browser">book</a> using the browser's print function. The site presents a series of graphic design and code experiments about using the browser as a tool for graphic design. I worked collaboratively with a group of students and <a href="http://johncaserta.com">John Caserta</a> to assemble the projects into a website and a book which would print from the browser.</p>
+
+	<img src="work/htmloutput/htmloutput1.jpg">
+	<img src="work/htmloutput/htmloutput2.jpg">
+</div>
+
+<div class="caption chini">
+	<h2>Chini <span class="date">2014</span></h2>
+	<p>"Chini" means sugar in Hindi. Chini is a Devanagari and Latin display typeface (in progress) that I made as a part of my degree project at RISD. Chini was my first attempt at a Devanagari typeface.</p>
+
+	<p>Chini was inspired round-brush painted signs common in parts of north India. It's meant to be used in display sizes, ideally for the web. Now that I know more about designing type for Devanagari, I look forward to adjusting this font.</p>
+
+	<p>This project was featured in <a href="http://drawdown.bigcartel.com/product/fff-filipino-folk-foundry">Filipino Folk Foundry</a> by <a href="http://officeocd.com/">Hardworking Goodlooking</a>, available through Draw Down books.</p>
+
+	<img src="work/chini/chini1.jpg">
+	<img src="work/chini/chini2.jpg">
+	<img src="work/chini/chini3.jpg">
+	<img src="work/chini/chini4.jpg">
+
+</div>
+
+
+<div class="caption color">
+	<h2>Color Book <span class="date">2012</span></h2>
+	<p>This process book documents projects completed for my Color class at RISD. Because color is relative, I explored the interaction of color by eschewing a neutral ground for the work. I added a textured background to add interest to many spreads of solid color.</p>
+
+	</p>My face is on the book to identify it as my work. The book was printed with an inkjet printer and hand-bound.</p>
+	<img src="work/color/color1.png">
+	<img src="work/color/color2.jpg">
+	<img src="work/color/color3.jpg">
+
+</div>
+
+
+
+
+</body></html>
