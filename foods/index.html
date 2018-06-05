@@ -10,9 +10,24 @@
 				$("div.combos").delay("800").slideDown("fast");
 			}, );
 
+			var out = false;
 			$("div.combos").click(function(){
-				$("h3").html(allFoods(a,b,c,d));
+				if (out) {
+					console.log(out);
+					$("h3").hide();
+					$(this).html("show me all foods please");
+					out = false;
+					console.log(out);
+				} else {
+					console.log(out);
+					$("h3").html(allFoods(a,b,c,d));
+					$("h3").show();
+					$(this).html("put the foods away thanks");
+					out = true;
+					console.log(out);
+				}
 			});
+
 
 		});
 	</script>
