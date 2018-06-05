@@ -1,0 +1,58 @@
+<html>
+<head>
+	<script src="foods.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("div.combos").hide();
+			$("div.generator").click(function(){
+				$("h1").html(foodMaker(a,b,c,d));
+				$("div.combos").delay("800").slideDown("fast");
+			}, );
+
+			$("div.combos").click(function(){
+				$("h3").html(allFoods(a,b,c,d));
+			});
+
+		});
+	</script>
+	<style>
+		body {
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+				color: red;
+				font-size: 5vw;	
+				font-weight: normal;
+				text-align: center;
+			}
+		
+		div.button {
+			border: .5vw solid red;
+			display: inline-block;
+			padding: 2vw;
+			margin: 2vw;
+		} div.button:hover {
+			cursor: pointer;
+			color: white;
+			background-color: red;
+		}
+
+		h1 {
+			margin: 3vw;
+			color: blue;
+		}
+		
+		h3 {
+			margin: 2vw;
+			color: green;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="button generator">Make a food !</div>
+	<h1></h1>
+	<div class="button combos">now show me all foods please</div>
+	<h3></h3>
+
+</body>
+</html>
