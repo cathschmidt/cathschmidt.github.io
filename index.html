@@ -1,141 +1,54 @@
 <html>
 <head>
-	<title>cls</title>
-	<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
-	<style>
-
-		* {
-			margin: 0;
-			padding: 0;
-			text-decoration: none;
-		}
-
-		body {
-			background: linear-gradient(#fffef3, #ffb0d5);
-		}
-
-		#orb{
-			position: fixed;
-			display: block;
-		    width: 20vw;
-		    height: 20vw;
-		    margin: auto;
-		    left: 40vw;
-		    transform: scale(2);
-		    margin: auto;
-		    top: 10vw;
-		    background-color: #ffc99938;
-		    border-radius: 50%;
-		    animation-name: float;
-		    animation-duration: 5s;
-		    animation-iteration-count: infinite;
-		    animation-timing-function: ease-in-out;
-		    box-shadow: -0.35vw -0.5vw 10vw #ff242475 inset;
-		    overflow: hidden;
-		    z-index: 10;
-		    transition: all .5s;
-		}
-
-		#orb:hover {
-			background-color: #d3ff21;
-			cursor: pointer;
-		} #orb:hover p{
-			filter: blur(0);
-		}
-
-		#highlight {
-		    width: 19vw;
-		    height: 18vw;
-		    background-color: transparent;
-		    border-top: 1vw solid #ffffff;
-		    border-radius: 56%;
-		    margin: auto;
-		    top: .5vw;
-		    position: relative;
-		    filter: blur(.5vw);
-		    transform: rotate(-25deg);
-		    box-shadow: -0.35vw -0.35vw 1.5vw #0000007a;
-		}
-
-		@keyframes float {
-			0% {margin-top: 10vw;}
-			50% {margin-top: 7vw;}
-			100% {margin-top: 10vw;}
-		}
-
-		p {
-		    position: relative;
-		    top: -11vw;
-		    width: 100%;
-		    text-align: center;
-		    font-size: 3vw;
-		    font-family: "Yatra One";
-		    color: white;
-		    filter: blur(.1vw);
-		}
-
-		#info {
-			position: fixed;
-		    z-index: 1; 
-		    width: 90vw;
-		    height: 100vh;
-		    color: white;
-		    overflow: scroll;
-		    top: 0;
-		    left: 0;
-		    padding: 0vw 5vw;
-		} 
-
-		h1 {
-			font-size: 13vw;
-			font-weight: normal;
-			line-height: 1.25em;
-			text-align: center;
-			font-family: "Yatra One";
-		}
-
-		#cv {
-			position: fixed;
-			display: block;
-		    left: -.5vw;
-		    bottom: -.5vw;
-		    color: white;
-		    font-family: "Yatra One";
-		    padding: 1.5vw;
-		    font-size: 2.5vw;
-		    z-index: 110;
-		    transition: font-size .5s, padding-bottom .5s, padding-left .5s, text-shadow .5s;
-		    background-color: #ff9cad;
-		    border-top-right-radius: 100%;
-		} #cv::after {
-			content: "cv";
-		} 
-		#cv:hover::after{
-			content:"curriculum vitae";
-		} #cv:hover {
-			cursor: pointer;
-			background-color: transparent;
-			border-radius: 0;
-			font-size: 10vw;
-			padding-bottom: 35vh;
-			padding-left: 10vw;
-			text-shadow: 0 0 .5vw #ff242475;
-		}
-
-	</style>
+	<link rel="stylesheet" href="style2.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>🐌c l s🐌</title>
 </head>
 <body>
 
-	<a id="orb" href="mailto:hi@cath.land">
-		<div id="highlight"></div>
-		<p>email</p>
-	</a>
-
-	<div id="info">
-		<h1>catherine leigh schmidt is a type designer &amp; developer, is a teacher, is technical, is ignorant, is trying to keep an open mind &amp; heart, is in berlin.</h1>
+	<div id="image">
+		<img src="moon-trees-natural.png">
 	</div>
 
-	<a id="cv" href="cv.html"></a>
+	<div id="content">
+
+		<div id="intro-para">
+			<p>my name is catherine leigh schmidt. my pronouns are she/her. I’m an american artist, designer, and cook living in berlin.</p>
+			<p>I co-run a community artist space &amp; kitchen called <a href="http://sarisarisalon.org">sari sari</a> 🌿</p>
+			<p><span style="padding-bottom: .25rem; border-bottom: 1px dotted tomato;">I’m currently looking for freelance graphic design, type design, or light frontend web development work.</span> <a href="http://cath.land/portfolio">take a look at my portfolio.</a> I'm particularly interested in collaborating with artists.</p>
+			<p>I’ve designed fonts, websites, interfaces, and printed matter. I also used to teach graphic design and web programming at california college of the arts.</p>
+			<p>I was born in 1992 in santiago, chile. I’ve also lived in france, india, and both coasts of the USA. I speak three languages well and three more poorly.</p>
+		</div>
+
+		<div id="links">
+				<ol id="left"><b>links:</b>
+					<li><a href="http://cath.land/portfolio">portfolio</a></li>
+					<li><a href="http://cath.land/cv">cv</a></li>
+					<li><a href="mailto:hi@cath.land">email</a></li>
+					<li><a href="http://github.io/cathschmidt">github</a></li>
+					<li><a href="http://are.na/catherine-leigh-schmidt">are.na</a></li>
+				</ol>
+				<ol><b>projects:</b>
+					<li><a href="http://sarisarisalon.org">sari sari</a></li>
+					<li><a href="https://fonts.google.com/specimen/Yatra+One">yatra (open source devanagari &amp; latin font)</a></li>
+					<li><a href="http://cath.land/teaching">teaching websites</a></li>
+					<li><a href="http://pheel.us">pheel.us (archive of web projects 2013-2015)</a></li>
+				</ol>
+		</div>
+
+		<p id="threads" style="padding-top: 2rem;">
+			<ul><b>interests &amp; threads:</b>
+				<li>spirituality and community building practices (for end times); climate justice.</li>
+				<li>low connectivity, light-weight, and low impact technologies. resistance to the big 5.</li>
+				<li>open source fonts, history of typography technology, &amp; typography for world writing systems.</li>
+				<li>web-to-print</li>
+				<li>new-age, plant-based, lunar, fungal, &amp; wholistic ways of healing &amp; being 🌿</li>
+			</ul>
+
+		</p>
+
+	</div>
+
 
 </body>
 </html>
