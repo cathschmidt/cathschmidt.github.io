@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 	$(".about-button").click(function(){
 		$(this).toggle(function(){
-			$(".about").show(1200);
+			$(".about").show(1600);
 		});
 	});
 
