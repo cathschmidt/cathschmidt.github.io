@@ -1,51 +1,78 @@
 <html>
 <head>
-	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>🐌c l s🐌</title>
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="script.js"></script>
 </head>
 <body>
 
-	<div id="image">
-		<img src="moon-trees-natural.png">
+<div class="about-container">
+	<div class="about">
+		<p><span class="highlight">my name is catherine leigh schmidt. my pronouns are she/her. I’m an artist living in berlin.</span></p>
+		<p><span class="highlight">I co-run a community artist space &amp; kitchen called <a href="http://sarisarisalon.org">sari sari</a> 🌿</span></p>
 	</div>
+  <div class="about-button"></div>
+</div>
 
-	<div id="content">
+	<div class="nest">
 
-		<div id="intro-para">
-			<p>my name is catherine leigh schmidt. my pronouns are she/her. I’m a designer and artist living in berlin.</p>
-			<p>I co-run a community artist space &amp; kitchen called <a href="http://sarisarisalon.org">sari sari</a> 🌿</p>
-			<p><span style="padding-bottom: .25rem; border-bottom: 1px dotted tomato;">I’m currently looking for freelance graphic design, type design/production, or frontend web development work.</span> <a href="http://cath.land/portfolio">take a look at my portfolio.</a> I'm particularly interested in collaborating with artists, activists, healers, and communities.</p>
+		<div class="nest-two-a">
 		</div>
 
-		<div id="links">
-				<ol id="left"><b>links:</b>
-					<li><a href="http://cath.land/portfolio">portfolio</a></li>
-					<li><a href="http://cath.land/cv">cv</a></li>
-					<li><a href="mailto:hi@cath.land">email</a></li>
-					<li><a href="http://github.com/cathschmidt">github</a></li>
-					<li><a href="http://are.na/catherine-leigh-schmidt">are.na</a></li>
-				</ol>
-				<ol><b>projects:</b>
-					<li><a href="http://sarisarisalon.org">sari sari</a></li>
-					<li><a href="https://fonts.google.com/specimen/Yatra+One">yatra (open source devanagari &amp; latin font)</a></li>
-					<li><a href="http://teaching.cath.land">teaching websites</a></li>
-					<li><a href="http://pheel.us">pheel.us (archive of web projects 2013-2015)</a></li>
-				</ol>
+		<div class="nest-two-b">
+
+			<div class="nest-three-c">
+
+			</div>
+
 		</div>
 
-		<p id="threads" style="padding-top: 2rem;">
-			<ul><b>interests &amp; threads:</b>
-				<li>spirituality and community building practices (for end times); climate justice.</li>
-				<li>low connectivity, light-weight, and low impact technologies. resistance to the big 5. sensitivity to surveilance.</li>
-				<li>open source fonts, <a href="https://github.com/dark-industries/dark-zine/issues/2">history of typography technology</a>, &amp; typography for world writing systems.</li>
-				<li>web-to-print</li>
-				<li>plant-based, lunar, and fungal ways of healing &amp; being 🌿</li>
-			</ul>
-
-		</p>
-
 	</div>
+
+	<div id="spinner">
+      <svg width="400px" height="400px">
+        <defs>
+          <path
+          id="circ"
+          d="
+            M 200, 200
+            m -150, 0
+            a 150,150 0 1,1 300,0
+            a 150,150 0 1,1 -300,0
+            "
+          />
+        </defs>
+        <text fill="#ffffff">
+          <textPath xlink:href="#circ">
+          cath • land •
+          </textPath>
+        </text>
+      </svg>
+    </div>
+
+      <div id="spinner-mobile">
+      <svg width="400px" height="400px">
+        <!-- TODO - this veers on the axis a bit -->
+        <defs>
+          <path
+          id="circ"
+          d="
+            M 200, 200
+            m -150, 0
+            a 150,150 0 1,1 300,0
+            a 150,150 0 1,1 -300,0
+            "
+          />
+        </defs>
+        <text fill="#ffffff">
+          <textPath xlink:href="#circ">
+          cath • land •
+          </textPath>
+        </text>
+      </svg>
+    </div>
 
 
 </body>
