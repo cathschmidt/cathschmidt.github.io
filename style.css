@@ -60,7 +60,7 @@ div#spinner {
   z-index: 15;
   font-family: "Yatra One";
   font-style: italic;
-  font-size: 5vw;
+  font-size: 4vw;
 
   display: flex;
   flex-direction: row;
@@ -70,7 +70,7 @@ div#spinner {
   width: 100vw;
   overflow: hidden;
   color: white;
-  letter-spacing: 4.5vw;
+  letter-spacing: 3vw;
   transform: scale(1.5);
 } #spinner svg {
   animation: spin 10s linear infinite;
