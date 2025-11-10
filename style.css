@@ -7,12 +7,13 @@
 	margin: 0;
 	padding: 0;
 	font-weight: normal;
-	color: white;
+	color: black;
 }
 
 body {
-	background-color: black;
-	color: white;
+	background-image: url('weeds.jpg');
+	background-size: cover;
+	color: black;
 	font-family: Helvetica, sans-serif;
 	overflow-x: hidden;
 	background-size: 100% auto;
@@ -49,13 +50,14 @@ p {
 ul {
 	width: 400px;
 	margin: auto;
+	padding-left: 15px;
 	font-size: 18px;
 	line-height: 22px;
-	list-style-type: disc;
+	list-style-type: square;
 }
 
 li {
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 }
 
 .xtra-top {
@@ -66,9 +68,14 @@ li {
 	padding-bottom: 15px;
 }
 
+.friend {
+	text-align: center;
+	margin-bottom: 0;
+}
+
 a:hover, a:active {
-	color: black;
-	background-color: white;
+	color: oldlace;
+	background-color: black;
 }
 
 .button {
@@ -76,7 +83,17 @@ a:hover, a:active {
 	text-decoration: none;
 	padding: 7px 14px;
 	margin-right: 6px;
-	border: 1px solid white;
+	border: 1px solid black;
+}
+
+div#container {
+	background-color: oldlace;
+	width: 450px;
+	overflow-x: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+
 }
 
 @media only screen and (max-width:1000px) {
