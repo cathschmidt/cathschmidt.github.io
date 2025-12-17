@@ -6,14 +6,18 @@
 }
 
 body {
-	background-image: url('weeds.jpg');
-	background-size: cover;
+	background-color: oldlace;
 	color: black;
 	font-family: Helvetica, sans-serif;
 	overflow-x: hidden;
 	background-size: 100% auto;
 	background-attachment: fixed;
 	padding-bottom: 44px;
+}
+
+#home-bg {
+	background-image: url('weeds.jpg');
+	background-size: cover;
 }
 
 h1 {
@@ -49,6 +53,18 @@ ul {
 	font-size: 18px;
 	line-height: 22px;
 	list-style-type: square;
+}
+
+img {
+	display: block;
+	margin: auto;
+	margin-bottom: 22px;
+	max-width: 400px;
+	height: auto;
+}
+
+.img-shadow {
+	box-shadow: 2px 2px 2px dimgrey;
 }
 
 li {
@@ -90,9 +106,6 @@ div#container {
 
 }
 
-#first-img {
-	display: none;
-}
 
 #buffer {
 	margin-top: 25%;
